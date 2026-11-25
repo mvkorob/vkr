@@ -28,6 +28,9 @@ PAGES = {
     "public_tracking": "/public/tracking",
     "public_faq": "/public/faq",
     "public_security": "/public/security",
+    "public_help": "/public/help",
+    "public_contacts": "/public/contacts",
+    "public_rules": "/public/rules",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
