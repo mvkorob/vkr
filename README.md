@@ -169,6 +169,8 @@ vendor/                   PySocks для установки через SOCKS-п�
 
 - [Руководство пользователя](docs/user_guide.md)
 - [Архитектура](docs/architecture.md)
+- [Объём исходников](docs/loc_audit.md)
+- [Состав версии 2.0.0](docs/release.md)
 - [Структура базы](docs/database.md)
 - [Пояснения к коду](docs/code_guide.md)
 - [Безопасность](docs/security.md)
