@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Вход | InfoSec Desk</title>
+  <link rel="icon" href="../../src/infosec_desk/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../src/infosec_desk/static/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">К основному содержанию</a>
+<div class="layout">
+  <aside class="sidebar" aria-label="Навигация">
+    <a class="brand" href="#" aria-label="InfoSec Desk, на главную" aria-disabled="true">
+      <span class="brand-mark" aria-hidden="true">IS</span>
+      <span><strong>InfoSec Desk</strong><small>Служба защиты информации</small></span>
+    </a>
+    <div class="sidebar-label">Разделы</div>
+    <nav class="menu" aria-label="Главное меню">
+
+      <a href="#" aria-disabled="true">О службе</a>
+      <a href="#" aria-disabled="true">Услуги</a>
+      <a href="#" aria-disabled="true">Как подать заявку</a>
+      <a href="#" aria-disabled="true">Категории</a>
+      <a href="#" aria-disabled="true">Приоритеты</a>
+      <a href="#" aria-disabled="true">Статусы</a>
+      <a href="#" aria-disabled="true">Отслеживание</a>
+      <a href="#" aria-disabled="true">Вопросы</a>
+      <a href="#" aria-disabled="true">Безопасность</a>
+      <a href="#" aria-disabled="true">Помощь без входа</a>
+      <a href="#" aria-disabled="true">Контакты</a>
+      <a href="#" aria-disabled="true">Правила</a>
+      <a href="#" aria-disabled="true">Обратная связь</a>
+      <a href="login.html">Вход</a>
+    </nav>
+
+  </aside>
+  <main class="content" id="main-content">
+    <header class="topbar">
+      <nav class="topbar-path" aria-label="Хлебные крошки">
+        <a href="#" aria-disabled="true">InfoSec Desk</a><span class="topbar-divider">/</span>
+
+        <strong aria-current="page">Вход</strong>
+      </nav>
+      <div class="topbar-account">
+        <span class="topbar-user">Гость</span>
+        <a class="topbar-login" href="login.html" aria-current="page">Войти</a>
+      </div>
+    </header>
+    <div class="page">
+
+
+
+<section class="login-box" aria-labelledby="login-heading">
+  <div class="login-brand"><span class="brand-mark" aria-hidden="true">IS</span>InfoSec Desk</div>
+  <h1 id="login-heading">Вход в систему</h1>
+  <p class="page-description">Введите данные своей учетной записи.</p>
+  <form method="get" action="#" class="stack" onsubmit="return false">
+    <input type="hidden" name="csrf_token" value="">
+    <label for="login-name">Логин<input id="login-name" name="username" required maxlength="40" autocomplete="username" autofocus></label>
+    <label for="login-pass">Пароль<input id="login-pass" type="password" name="password" required autocomplete="current-password"></label>
+    <button class="primary full-width" type="submit">Войти</button>
+  </form>
+  <p class="login-footer">Если доступа нет, обратитесь к администратору системы.</p>
+</section>
+
+      <footer class="site-footer">
+        <span>Разработчик: Коробейникова Мария Вячеславовна</span>
+        <a href="#" aria-disabled="true">Контакты службы</a>
+      </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
