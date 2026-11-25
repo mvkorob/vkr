@@ -1,0 +1,267 @@
+{
+  "commit": "3c56c15c594a1a4105eef9251fd2190461f7d470",
+  "metric": "nonempty_physical_lines_excluding_comments",
+  "totals": {
+    "application": 3122,
+    "tests": 1018,
+    "tools": 165
+  },
+  "total": 4305,
+  "files": [
+    {
+      "path": "run.py",
+      "category": "application",
+      "lines": 64
+    },
+    {
+      "path": "sql/schema.sql",
+      "category": "application",
+      "lines": 92
+    },
+    {
+      "path": "src/infosec_desk/__init__.py",
+      "category": "application",
+      "lines": 2
+    },
+    {
+      "path": "src/infosec_desk/__main__.py",
+      "category": "application",
+      "lines": 202
+    },
+    {
+      "path": "src/infosec_desk/db.py",
+      "category": "application",
+      "lines": 134
+    },
+    {
+      "path": "src/infosec_desk/exchange.py",
+      "category": "application",
+      "lines": 69
+    },
+    {
+      "path": "src/infosec_desk/maintenance.py",
+      "category": "application",
+      "lines": 51
+    },
+    {
+      "path": "src/infosec_desk/security.py",
+      "category": "application",
+      "lines": 31
+    },
+    {
+      "path": "src/infosec_desk/service.py",
+      "category": "application",
+      "lines": 550
+    },
+    {
+      "path": "src/infosec_desk/static/style.css",
+      "category": "application",
+      "lines": 342
+    },
+    {
+      "path": "src/infosec_desk/templates/_table.html",
+      "category": "application",
+      "lines": 22
+    },
+    {
+      "path": "src/infosec_desk/templates/admin_analytics.html",
+      "category": "application",
+      "lines": 18
+    },
+    {
+      "path": "src/infosec_desk/templates/admin_exchange.html",
+      "category": "application",
+      "lines": 26
+    },
+    {
+      "path": "src/infosec_desk/templates/admin_feedback.html",
+      "category": "application",
+      "lines": 33
+    },
+    {
+      "path": "src/infosec_desk/templates/admin_services.html",
+      "category": "application",
+      "lines": 47
+    },
+    {
+      "path": "src/infosec_desk/templates/admin_settings.html",
+      "category": "application",
+      "lines": 23
+    },
+    {
+      "path": "src/infosec_desk/templates/assets.html",
+      "category": "application",
+      "lines": 42
+    },
+    {
+      "path": "src/infosec_desk/templates/audit.html",
+      "category": "application",
+      "lines": 12
+    },
+    {
+      "path": "src/infosec_desk/templates/base.html",
+      "category": "application",
+      "lines": 109
+    },
+    {
+      "path": "src/infosec_desk/templates/dashboard.html",
+      "category": "application",
+      "lines": 17
+    },
+    {
+      "path": "src/infosec_desk/templates/error.html",
+      "category": "application",
+      "lines": 9
+    },
+    {
+      "path": "src/infosec_desk/templates/feedback.html",
+      "category": "application",
+      "lines": 29
+    },
+    {
+      "path": "src/infosec_desk/templates/login.html",
+      "category": "application",
+      "lines": 15
+    },
+    {
+      "path": "src/infosec_desk/templates/my_activity.html",
+      "category": "application",
+      "lines": 18
+    },
+    {
+      "path": "src/infosec_desk/templates/notifications.html",
+      "category": "application",
+      "lines": 23
+    },
+    {
+      "path": "src/infosec_desk/templates/personal_help.html",
+      "category": "application",
+      "lines": 13
+    },
+    {
+      "path": "src/infosec_desk/templates/profile.html",
+      "category": "application",
+      "lines": 15
+    },
+    {
+      "path": "src/infosec_desk/templates/public_page.html",
+      "category": "application",
+      "lines": 26
+    },
+    {
+      "path": "src/infosec_desk/templates/ticket_detail.html",
+      "category": "application",
+      "lines": 77
+    },
+    {
+      "path": "src/infosec_desk/templates/ticket_new.html",
+      "category": "application",
+      "lines": 34
+    },
+    {
+      "path": "src/infosec_desk/templates/tickets.html",
+      "category": "application",
+      "lines": 20
+    },
+    {
+      "path": "src/infosec_desk/templates/users.html",
+      "category": "application",
+      "lines": 87
+    },
+    {
+      "path": "src/infosec_desk/web.py",
+      "category": "application",
+      "lines": 838
+    },
+    {
+      "path": "tests/conftest.py",
+      "category": "tests",
+      "lines": 29
+    },
+    {
+      "path": "tests/test_cli.py",
+      "category": "tests",
+      "lines": 45
+    },
+    {
+      "path": "tests/test_deployment.py",
+      "category": "tests",
+      "lines": 89
+    },
+    {
+      "path": "tests/test_edit_history.py",
+      "category": "tests",
+      "lines": 129
+    },
+    {
+      "path": "tests/test_exchange_maintenance.py",
+      "category": "tests",
+      "lines": 57
+    },
+    {
+      "path": "tests/test_flask_migration.py",
+      "category": "tests",
+      "lines": 74
+    },
+    {
+      "path": "tests/test_launcher.py",
+      "category": "tests",
+      "lines": 41
+    },
+    {
+      "path": "tests/test_layout_consistency.py",
+      "category": "tests",
+      "lines": 67
+    },
+    {
+      "path": "tests/test_password_reset.py",
+      "category": "tests",
+      "lines": 37
+    },
+    {
+      "path": "tests/test_public_layout.py",
+      "category": "tests",
+      "lines": 35
+    },
+    {
+      "path": "tests/test_quality.py",
+      "category": "tests",
+      "lines": 72
+    },
+    {
+      "path": "tests/test_requirements.py",
+      "category": "tests",
+      "lines": 108
+    },
+    {
+      "path": "tests/test_service.py",
+      "category": "tests",
+      "lines": 118
+    },
+    {
+      "path": "tests/test_users_layout.py",
+      "category": "tests",
+      "lines": 24
+    },
+    {
+      "path": "tests/test_web.py",
+      "category": "tests",
+      "lines": 93
+    },
+    {
+      "path": "tools/count_loc.py",
+      "category": "tools",
+      "lines": 60
+    },
+    {
+      "path": "tools/offline_check.py",
+      "category": "tools",
+      "lines": 105
+    },
+    {
+      "path": "wsgi.py",
+      "category": "application",
+      "lines": 32
+    }
+  ]
+}
