@@ -10,7 +10,13 @@ from pathlib import Path
 from .db import connect, initialize
 from .exchange import export_assets, import_assets
 from .maintenance import backup_database, inspect_update_manifest
-from .service import add_asset, create_ticket, create_user, reset_admin_password
+from .service import (
+    add_asset,
+    add_service,
+    create_ticket,
+    create_user,
+    reset_admin_password,
+)
 
 
 def seed_demo(db_path):
@@ -29,15 +35,77 @@ def seed_demo(db_path):
     add_asset(db_path, "AV-002", "Сервер антивирусной защиты", "ЦОД", "Антивирусная защита")
     requester = next(x for x in _users(db_path) if x["username"] == "employee")
     create_ticket(
-        db_path, requester, "Ошибка доступа к защищенному ресурсу",
+        db_path,
+        requester,
+        "Ошибка доступа к защищенному ресурсу",
         "После обновления учетной записи доступ к общему каталогу ограничен.",
-        "access", "high", 1,
+        "access",
+        "high",
+        1,
     )
     create_ticket(
-        db_path, requester, "Проверка актуальности антивирусных баз",
+        db_path,
+        requester,
+        "Проверка актуальности антивирусных баз",
         "Требуется проверить получение обновлений на рабочей станции отдела.",
-        "antivirus", "normal", 2,
+        "antivirus",
+        "normal",
+        2,
     )
+    for code, name, description, category in (
+        ("ACCESS", "Доступ к ресурсу", "Ошибки входа и управления правами", "access"),
+        ("AV", "Антивирусная защита", "Настройка и обновление защиты", "antivirus"),
+        ("NETWORK", "Сетевая защита", "Проверка доступа и межсетевого экрана", "network"),
+        ("CRYPTO", "Криптографическая защита", "Сертификаты и шифрование", "crypto"),
+        ("BACKUP", "Резервное копирование", "Копии и восстановление данных", "backup"),
+    ):
+        add_service(db_path, code, name, description, category)
+    # Дополнительные учебные заявки нужны для проверки полного экспорта.
+    # Реальных персональных данных в учебном комплекте нет.
+    with connect(db_path) as db:
+        db.execute("BEGIN")
+        for i in range(3, 502):
+            status = "closed" if i % 2 else "new"
+            db.execute(
+                """INSERT INTO tickets(
+                       title, description, category, priority, status, author_id,
+                       assignee_id, resolved_at, closed_at
+                   ) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                (
+                    f"Учебное обращение {i}",
+                    f"Тестовая заявка номер {i} для проверки фильтрации и экспорта.",
+                    "access" if i % 2 else "antivirus",
+                    "normal",
+                    status,
+                    requester["id"],
+                    2 if status == "closed" else None,
+                    "2026-11-23 11:00:00" if status == "closed" else None,
+                    "2026-11-23 12:00:00" if status == "closed" else None,
+                ),
+            )
+            db.execute(
+                (
+                    "INSERT INTO "
+                    "ticket_status_history(ticket_id,actor_id,old_status,new_status) "
+                    "VALUES(?,?,?,?)"
+                ),
+                (i, requester["id"], None, "new"),
+            )
+            if status == "closed":
+                for old_status, new_status in (
+                    ("new", "in_progress"),
+                    ("in_progress", "resolved"),
+                    ("resolved", "closed"),
+                ):
+                    db.execute(
+                        (
+                            "INSERT INTO "
+                            "ticket_status_history(ticket_id,actor_id,old_status,new_status) "
+                            "VALUES(?,?,?,?)"
+                        ),
+                        (i, 2, old_status, new_status),
+                    )
+        db.commit()
     print("Демонстрационные пользователи: admin, operator, employee")
     print("Пароль для всех: DemoPass123! (только для локального знакомства)")
 
@@ -52,9 +120,19 @@ def main():
         description="Учет заявок на обслуживание средств защиты информации"
     )
     parser.add_argument(
-        "command", nargs="?",
-        choices=["serve", "init-db", "create-admin", "reset-password", "seed-demo",
-                 "import-assets", "export-assets", "backup-db", "check-update"],
+        "command",
+        nargs="?",
+        choices=[
+            "serve",
+            "init-db",
+            "create-admin",
+            "reset-password",
+            "seed-demo",
+            "import-assets",
+            "export-assets",
+            "backup-db",
+            "check-update",
+        ],
         default="serve",
     )
     parser.add_argument("--file", help="Файл обмена, резервной копии или обновления")
@@ -103,18 +181,19 @@ def main():
                 print(f"Резервная копия: {backup_database(db_path, args.file)}")
             else:
                 report = inspect_update_manifest(args.file)
-                status = ("есть новая версия" if report["needs_update"]
-                          else "обновление не требуется")
-                print(f"Текущая версия: {report['installed']}; "
-                      f"доступная версия: {report['available']}; {status}")
+                status = (
+                    "есть новая версия" if report["needs_update"] else "обновление не требуется"
+                )
+                print(
+                    f"Текущая версия: {report['installed']}; "
+                    f"доступная версия: {report['available']}; {status}"
+                )
         except (OSError, ValueError) as exc:
             parser.error(str(exc))
         return
     if args.command == "seed-demo":
         seed_demo(db_path)
         return
-    import uvicorn
-
     from .web import create_app
 
     with connect(db_path) as db:
@@ -130,7 +209,7 @@ def main():
         parser.error("Для сетевого запуска задайте INFOSEC_SECRET_KEY и настройте HTTPS")
     app = create_app(db_path)
     print(f"Адрес: http://{args.host}:{args.port}")
-    uvicorn.run(app, host=args.host, port=args.port, log_level="info")
+    app.run(host=args.host, port=args.port, debug=False, use_reloader=False)
 
 
 if __name__ == "__main__":

@@ -1,15 +1,18 @@
-Контрольный запуск автоматизированных тестов
+Контрольный запуск версии на Flask
 Команда: python -m pytest -q
-Дата: 2026-11-25T07:30:35+03:00
+Дата: 2026-11-25T07:59:54+03:00
 Система: Linux
 Python: 3.10.12
 
-42 passed, 1 warning in 37.81s
+49 passed in 50.65s
 
-Предупреждение зависимости: StarletteDeprecationWarning — использование httpx
-в starlette.testclient объявлено устаревающим; рекомендован httpx2.
+Проверка кода: python -m ruff check src tests run.py, All checks passed!
+Компиляция: python -m compileall -q src tests, успешно.
+Точка входа: python run.py --help, успешно.
+HTTP: запуск через run.py serve на временной базе; /health, /login,
+/public/overview и /static/style.css отвечают. Гость с /tickets направляется на /login.
 
-Проверка кода: python -m ruff check src tests run.py — All checks passed!
-Проверка точки входа: python run.py --help — успешно.
+Проверена база со схемой версии 1.0.0: записи и пароли сохраняются,
+повторная инициализация не меняет существующие данные, новая заявка создаётся через Flask.
 
-Тесты запускаются на временных БД; руководство по повторной проверке: docs/verification.md.
+Тесты работают на временных базах. Порядок проверки: docs/verification.md.
