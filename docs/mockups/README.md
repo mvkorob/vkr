@@ -15,6 +15,9 @@
 | Категории обращений | [public_categories.html](public_categories.html) |
 | Приоритеты обращений | [public_priorities.html](public_priorities.html) |
 | Статусы обращений | [public_status.html](public_status.html) |
+| Отслеживание заявки | [public_tracking.html](public_tracking.html) |
+| Вопросы и ответы | [public_faq.html](public_faq.html) |
+| Конфиденциальность | [public_security.html](public_security.html) |
 
 Публичные страницы показаны без входа в систему. Внутренние экраны показаны для роли сотрудника. Реестр содержит первые 25 заявок; показатели главной рассчитаны по демонстрационной базе. Ссылки между этими экранами работают локально. Формы служат для просмотра и не отправляют данные.
 
