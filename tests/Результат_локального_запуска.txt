@@ -1,0 +1,15 @@
+Контрольный запуск автоматизированных тестов
+Команда: python -m pytest -q
+Дата: 2026-11-25T07:30:35+03:00
+Система: Linux
+Python: 3.10.12
+
+42 passed, 1 warning in 37.81s
+
+Предупреждение зависимости: StarletteDeprecationWarning — использование httpx
+в starlette.testclient объявлено устаревающим; рекомендован httpx2.
+
+Проверка кода: python -m ruff check src tests run.py — All checks passed!
+Проверка точки входа: python run.py --help — успешно.
+
+Тесты запускаются на временных БД; руководство по повторной проверке: docs/verification.md.
