@@ -12,6 +12,9 @@
 | О службе | [public_overview.html](public_overview.html) |
 | Каталог услуг | [public_services.html](public_services.html) |
 | Порядок подачи заявки | [public_submit.html](public_submit.html) |
+| Категории обращений | [public_categories.html](public_categories.html) |
+| Приоритеты обращений | [public_priorities.html](public_priorities.html) |
+| Статусы обращений | [public_status.html](public_status.html) |
 
 Публичные страницы показаны без входа в систему. Внутренние экраны показаны для роли сотрудника. Реестр содержит первые 25 заявок; показатели главной рассчитаны по демонстрационной базе. Ссылки между этими экранами работают локально. Формы служат для просмотра и не отправляют данные.
 
