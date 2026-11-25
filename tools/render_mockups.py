@@ -25,6 +25,9 @@ PAGES = {
     "public_categories": "/public/categories",
     "public_priorities": "/public/priorities",
     "public_status": "/public/status",
+    "public_tracking": "/public/tracking",
+    "public_faq": "/public/faq",
+    "public_security": "/public/security",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
