@@ -6,6 +6,8 @@
 
 Опубликованная версия: https://infosec-service-desk-1.onrender.com/
 
+[![Открыть сайт по QR-коду](docs/images/site-qr.png)](https://infosec-service-desk-1.onrender.com/)
+
 Ветка `flask-migration` содержит переход с FastAPI на Flask. Обновление опубликованного сервиса выполняется отдельно.
 
 ## Запуск и проверки
