@@ -8,7 +8,8 @@
 [![Открыть сайт по QR-коду](docs/images/site-qr.png)](https://infosec-service-desk-1.onrender.com/)
 
 Версия исходников: **2.0.0**. Стек: Python 3.10+, Flask, Jinja2, SQLite и openpyxl.
-Конфигурация размещения этого репозитория на Render будет добавлена отдельным этапом.
+Конфигурация Render и Docker подготовлена. [Инструкция размещения](docs/deployment_render.md).
+Создание сервиса в аккаунте Render выполняется отдельно.
 
 ## Возможности
 
