@@ -1,11 +1,10 @@
 Контрольный запуск версии на Flask
 Команда: python -m pytest -q
-Дата: 2026-11-25T08:53:13+03:00
+Дата: 2026-11-25T11:31:28+03:00
 Система: Linux
 Python 3.10.12
-Среда: новое виртуальное окружение, зависимости установлены из pyproject.toml с группой dev.
 
-61 passed in 63.22s (0:01:03)
+67 passed in 84.47s (0:01:24)
 
 Проверка кода: python -m ruff check src tests run.py, All checks passed!
 Компиляция: python -m compileall -q src tests, успешно.
@@ -17,3 +16,7 @@ Python 3.10.12
 
 Переход с базы версии 1.0.0 проверяется в test_flask_migration.py.
 Тесты используют временные базы. Порядок проверки: docs/verification.md.
+
+Render: шесть тестов WSGI пройдены.
+Docker: образ собран на Python 3.12; Gunicorn 27.0.1 запущен, /health вернул 200.
+Внешний сервис Render в рамках этой проверки не создавался.
