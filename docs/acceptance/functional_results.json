@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-25T13:14:34+03:00",
+  "commit": "022aad26eeaca81a2097fa2947ae62c597c971be",
+  "environment": "Linux, Python 3.10.12, Gunicorn, HTTP на 127.0.0.1, временная копия учебной базы",
+  "checks": [
+    {
+      "code": "HTTP-01",
+      "description": "Запуск Gunicorn и ответ /health",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-02",
+      "description": "12 публичных страниц, вход и обратная связь",
+      "result": "passed",
+      "public_pages": 12
+    },
+    {
+      "code": "HTTP-03",
+      "description": "Гость перенаправляется со служебных страниц на вход",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-04",
+      "description": "CSRF-защита и запись обратной связи",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-05",
+      "description": "Вход под тремя ролями через HTTP",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-06",
+      "description": "Права ролей на семи административных страницах и экспорте",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-07",
+      "description": "HTTP-экспорт CSV/XLSX: 501 и 251 запись, совпадение с образцами",
+      "result": "passed",
+      "exports": [
+        {
+          "filter": "all",
+          "records": 501,
+          "first_id": "З-000501",
+          "last_id": "З-000001",
+          "csv_matches_xlsx": true,
+          "matches_samples": true
+        },
+        {
+          "filter": "?status=closed",
+          "records": 251,
+          "first_id": "З-000501",
+          "last_id": "З-000001",
+          "csv_matches_xlsx": true,
+          "matches_samples": true
+        }
+      ]
+    },
+    {
+      "code": "HTTP-08",
+      "description": "Создание пользователя и запрет просмотра чужой заявки",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-09",
+      "description": "Создание заявки, ограничения статуса, два комментария и доступ к вложению",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-10",
+      "description": "Полный цикл заявки: назначение, решение, закрытие, даты и четыре состояния",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-11",
+      "description": "Поиск при экспорте и защита CSV/XLSX от исполнения формулы",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-12",
+      "description": "JSON: импорт новой записи, повтор без дублей и отклонение неверного формата",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-13",
+      "description": "Настройки службы, чтение уведомлений и завершение сессии",
+      "result": "passed"
+    },
+    {
+      "code": "HTTP-14",
+      "description": "Целостность базы и внешние ключи после сценариев",
+      "result": "passed"
+    }
+  ],
+  "source_database_unchanged": true,
+  "source_database_sha256": "e4b040ae0751b5387135c8372ea59238e58e382905169a7d1caab55e886e4955",
+  "gunicorn_version": "27.0.1"
+}
