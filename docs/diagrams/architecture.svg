@@ -15,14 +15,14 @@
 <title>browser</title>
 <path fill="none" stroke="#6f7d8c" d="M292,-425C292,-425 99,-425 99,-425 93,-425 87,-419 87,-413 87,-413 87,-385 87,-385 87,-379 93,-373 99,-373 99,-373 292,-373 292,-373 298,-373 304,-379 304,-385 304,-385 304,-413 304,-413 304,-419 298,-425 292,-425"/>
 <text text-anchor="middle" x="195.5" y="-402.6" font-family="DejaVu Sans" font-size="13.00">Пользователи</text>
-<text text-anchor="middle" x="195.5" y="-388.6" font-family="DejaVu Sans" font-size="13.00">Браузер Windows / Ubuntu</text>
+<text text-anchor="middle" x="195.5" y="-388.6" font-family="DejaVu Sans" font-size="13.00">Веб-браузер</text>
 </g>
 <!-- web -->
 <g id="node2" class="node">
 <title>web</title>
 <path fill="none" stroke="#6f7d8c" d="M260,-296C260,-296 131,-296 131,-296 125,-296 119,-290 119,-284 119,-284 119,-256 119,-256 119,-250 125,-244 131,-244 131,-244 260,-244 260,-244 266,-244 272,-250 272,-256 272,-256 272,-284 272,-284 272,-290 266,-296 260,-296"/>
 <text text-anchor="middle" x="195.5" y="-273.6" font-family="DejaVu Sans" font-size="13.00">Веб&#45;приложение</text>
-<text text-anchor="middle" x="195.5" y="-259.6" font-family="DejaVu Sans" font-size="13.00">FastAPI + HTML</text>
+<text text-anchor="middle" x="195.5" y="-259.6" font-family="DejaVu Sans" font-size="13.00">Flask + HTML</text>
 </g>
 <!-- browser&#45;&gt;web -->
 <g id="edge1" class="edge">
