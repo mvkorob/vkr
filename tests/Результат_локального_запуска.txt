@@ -1,10 +1,10 @@
 Контрольный запуск версии на Flask
 Команда: python -m pytest -q
-Дата: 2026-11-25T11:31:28+03:00
+Дата: 2026-11-25T13:16:39+03:00
 Система: Linux
 Python 3.10.12
 
-67 passed in 84.47s (0:01:24)
+67 passed in 77.43s (0:01:17)
 
 Проверка кода: python -m ruff check src tests run.py, All checks passed!
 Компиляция: python -m compileall -q src tests, успешно.
@@ -20,3 +20,6 @@ Python 3.10.12
 Render: шесть тестов WSGI пройдены.
 Docker: образ собран на Python 3.12; Gunicorn 27.0.1 запущен, /health вернул 200.
 Внешний сервис Render в рамках этой проверки не создавался.
+
+Сценарный HTTP-прогон: 14 проверок через работающий Gunicorn, все пройдены.
+Протокол: docs/acceptance/functional_results.json.
