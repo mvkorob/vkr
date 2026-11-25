@@ -1,0 +1,14 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+*.pyc
+.env
+*.sqlite3-wal
+*.sqlite3-shm
+docs/mockups
+practice_docs
+samples
+
+instance/*
+!instance/demo.sqlite3
