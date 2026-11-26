@@ -1,12 +1,24 @@
 digraph Architecture {
-  graph [label="Архитектура системы учета заявок", labelloc=t, fontsize=20, fontname="DejaVu Sans", rankdir=TB, nodesep=0.7, ranksep=0.85, bgcolor=white, pad="0.4"];
-  node [shape=box, style="rounded", color="#6f7d8c", fontname="DejaVu Sans", fontsize=13, margin="0.25,0.16"];
-  edge [color="#747f8a", arrowsize=0.8];
-  browser [label="Пользователи\nВеб-браузер"];
-  web [label="Веб-приложение\nFlask + HTML"];
-  business [label="Бизнес-логика\nЗаявки, пользователи, журнал"];
-  db [label="База данных\nSQLite"];
-  browser -> web [label="HTTP"];
-  web -> business;
-  business -> db [label="SQL"];
+  graph [label="Общая архитектура системы учета заявок", labelloc=t,
+    fontsize=18, fontname="DejaVu Sans", rankdir=TB, nodesep=.8,
+    ranksep=.8, bgcolor=white, pad=.3];
+  node [shape=box, style=rounded, fontname="DejaVu Sans", fontsize=12,
+    margin="0.2,0.15", color="#62717e"];
+  edge [fontname="DejaVu Sans", fontsize=10, color="#62717e", arrowsize=.8];
+  browser [label="Пользователи\nВеб-браузер: HTML и CSS"];
+  subgraph cluster_app {
+    label="Python-приложение";
+    fontname="DejaVu Sans";
+    color="#aab4be";
+    web [label="Обработка HTTP-запросов\nFlask, web.py\nСеансы и доступ по ролям"];
+    templates [label="Представление страниц\nJinja2, templates/, static/"];
+    business [label="Предметные операции\nservice.py\nЗаявки, справочники, история"];
+    {rank=same; templates; business;}
+  }
+  db [label="Хранение данных\ndb.py, SQLite\n11 таблиц, внешние ключи, транзакции"];
+  browser -> web [label="HTTP-запросы"];
+  web -> templates [label="Формирование HTML"];
+  web -> business [label="Вызов операций"];
+  business -> db [label="Чтение и запись"];
+  web -> db [label="Чтение данных и экспорт"];
 }
