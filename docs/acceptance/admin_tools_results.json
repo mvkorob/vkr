@@ -1,0 +1,42 @@
+{
+  "source_commit": "34ff7c75a33f57eff929f8766172a38a1ec6f593",
+  "method": "Temporary demo database; Flask test client, service functions and direct count queries",
+  "cases": [
+    {
+      "case": "non_admin_access_denied",
+      "result": "passed"
+    },
+    {
+      "case": "settings_require_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "settings_saved_and_rendered",
+      "result": "passed"
+    },
+    {
+      "case": "analytics_matches_eight_table_counts",
+      "result": "passed"
+    },
+    {
+      "case": "exchange_page_and_json_export",
+      "result": "passed"
+    },
+    {
+      "case": "json_import_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "json_first_and_repeat_import",
+      "result": "passed"
+    },
+    {
+      "case": "analytics_reflects_imported_asset",
+      "result": "passed"
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed"
+    }
+  ]
+}
