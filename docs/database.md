@@ -16,7 +16,37 @@
 | `notifications` | Уведомления пользователей |
 | `application_settings` | Настройки службы |
 
-На [схеме основных связей](diagrams/database.svg) показаны пользователи, СЗИ, заявки, комментарии и журнал.
+## Схемы таблиц
+
+На [схеме основных связей](diagrams/database.svg) показаны пользователи, СЗИ,
+заявки, комментарии и журнал: пять таблиц и семь внешних ключей.
+[Полная схема](diagrams/database_11.svg) включает все 11 таблиц и 13 внешних ключей.
+Стрелка направлена от дочерней таблицы к родительской; подпись указывает поле
+внешнего ключа и поле назначения. `PK` обозначает первичный ключ, `FK` внешний.
+
+| Схема | Исходник | Изображение |
+| --- | --- | --- |
+| Основные связи | [DOT](diagrams/database.dot) | [PNG](diagrams/database.png) |
+| Все таблицы | [DOT](diagrams/database_11.dot) | [PNG](diagrams/database_11.png) |
+
+`service_catalog`, `feedback_messages` и `application_settings` показаны отдельно:
+в SQL-схеме у них нет внешних ключей. Категория услуги и категория заявки
+обрабатываются приложением; отдельная связь между каталогом и заявкой в базе
+не задана.
+
+Состав полей и внешних ключей сверен между `sql/schema.sql`, `db.SCHEMA`
+и демонстрационной базой. Проверка SQLite `integrity_check` вернула `ok`,
+а `foreign_key_check` не выявила нарушений. Проверка выполнялась без изменения
+демонстрационной базы.
+
+Повторное построение изображений при установленном Graphviz:
+
+```bash
+dot -Tsvg docs/diagrams/database.dot -o docs/diagrams/database.svg
+dot -Tpng docs/diagrams/database.dot -o docs/diagrams/database.png
+dot -Tsvg docs/diagrams/database_11.dot -o docs/diagrams/database_11.svg
+dot -Tpng docs/diagrams/database_11.dot -o docs/diagrams/database_11.png
+```
 
 Связи: заявитель (`tickets.author_id`) ссылается на `users`; назначенный исполнитель (`tickets.assignee_id`) также ссылается на `users`. Объект обслуживания (`tickets.asset_id`) ссылается на `assets`. Комментарии и события связаны с заявкой и инициатором действия.
 
