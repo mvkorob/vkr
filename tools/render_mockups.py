@@ -37,6 +37,8 @@ PAGES = {
     "my_activity": "/my-activity",
     "notifications": "/notifications",
     "assets": "/assets",
+    "admin_users": "/users",
+    "admin_audit": "/audit",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
@@ -111,7 +113,7 @@ def main():
                 with client.session_transaction() as session:
                     session.clear()
                     if name not in ("login", "feedback") and not name.startswith("public_"):
-                        session["user_id"] = 3
+                        session["user_id"] = 1 if name.startswith("admin_") else 3
                 with patch.object(service, "list_tickets", side_effect=preview_tickets):
                     response = client.get(PAGES[name])
                 assert response.status_code == 200, name
