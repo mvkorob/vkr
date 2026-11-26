@@ -39,6 +39,8 @@ PAGES = {
     "assets": "/assets",
     "admin_users": "/users",
     "admin_audit": "/audit",
+    "admin_services": "/admin/services",
+    "admin_feedback": "/admin/feedback",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
