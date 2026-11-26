@@ -183,6 +183,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Проверенные сценарии обмена](docs/file_exchange_cases.md)
 - [Проверки](docs/verification.md)
 - [Тест-план и сценарии приёмки](docs/test_plan.md)
+- [Проверка чистой установки](docs/acceptance/launch_walkthrough.md)
 - [Браузеры и снимки интерфейса](docs/acceptance/browser_protocol.md)
 - [Активность и уведомления](docs/acceptance/notifications_protocol.md)
 - [Справочник СЗИ](docs/acceptance/assets_protocol.md)
