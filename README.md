@@ -167,6 +167,9 @@ vendor/                   PySocks для установки через SOCKS-п�
 
 ## Документация
 
+- [Итоговый комплект для сдачи](docs/acceptance/final_handout.md)
+- [Финальные проверки версии 2.0.0](docs/acceptance/release_readiness.md)
+
 - [Отчёт по преддипломной практике](practice_docs/README.md)
 - [Техническое задание](practice_docs/Техническое_задание.docx)
 
