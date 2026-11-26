@@ -185,6 +185,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Тест-план и сценарии приёмки](docs/test_plan.md)
 - [Проверка чистой установки](docs/acceptance/launch_walkthrough.md)
 - [Браузеры и снимки интерфейса](docs/acceptance/browser_protocol.md)
+- [Интерфейс на iPad, iPhone и Windows](docs/acceptance/devices_protocol.md)
 - [Активность и уведомления](docs/acceptance/notifications_protocol.md)
 - [Справочник СЗИ](docs/acceptance/assets_protocol.md)
 - [Пользователи и аудит](docs/acceptance/users_audit_protocol.md)
