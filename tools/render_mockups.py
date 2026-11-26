@@ -36,6 +36,7 @@ PAGES = {
     "my_help": "/my-help",
     "my_activity": "/my-activity",
     "notifications": "/notifications",
+    "assets": "/assets",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
