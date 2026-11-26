@@ -1,0 +1,37 @@
+{
+  "source_commit": "f194e0571bac135c3c02ad3d14f5e1ce94a9ab2c",
+  "date": "2026-11-26",
+  "method": "Real local HTTP server and temporary database; SQLite checks",
+  "checks": [
+    {
+      "case": "guest_message_saved",
+      "result": "passed",
+      "details": {
+        "id": 1,
+        "initial_state": "new"
+      }
+    },
+    {
+      "case": "admin_reads_message",
+      "result": "passed",
+      "details": {
+        "subject_and_body_visible": true
+      }
+    },
+    {
+      "case": "processed_preserves_message",
+      "result": "passed",
+      "details": {
+        "state": "processed",
+        "body_unchanged": true
+      }
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed",
+      "details": {
+        "sha256_matches": true
+      }
+    }
+  ]
+}
