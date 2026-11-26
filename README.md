@@ -167,6 +167,8 @@ vendor/                   PySocks для установки через SOCKS-п�
 
 ## Документация
 
+- [Отчёт по преддипломной практике](practice_docs/README.md)
+
 - [Руководство пользователя](docs/user_guide.md)
 - [Архитектура](docs/architecture.md)
 - [Устройство версии Flask](docs/architecture_flask.md)
