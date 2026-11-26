@@ -1,0 +1,26 @@
+digraph Components {
+  graph [rankdir=TB, fontname="DejaVu Sans", fontsize=12,
+    label="Компоненты веб-приложения", labelloc=t, bgcolor=white,
+    nodesep=.7, ranksep=.8];
+  node [shape=box, color=black, style=rounded, fontname="DejaVu Sans", fontsize=10];
+  edge [fontname="DejaVu Sans", fontsize=9, color=black];
+  browser [label="Браузер\nHTML, CSS"];
+  web [label="HTTP-маршруты и доступ по ролям\nFlask, web.py"];
+  templates [label="Шаблоны страниц\nJinja2, templates/"];
+  service [label="Предметные операции\nservice.py"];
+  security [label="Пароли, CSRF, проверка полей\nsecurity.py"];
+  exchange [label="JSON-импорт справочника СЗИ\nexchange.py"];
+  exports [label="CSV, XLSX и JSON-экспорт\nweb.py, csv, openpyxl"];
+  db [label="Подключения и транзакции\ndb.py, SQLite"];
+  browser -> web [label="HTTP"];
+  web -> templates [label="HTML"];
+  web -> service;
+  web -> security [label="CSRF"];
+  service -> security [label="Поля и пароли"];
+  web -> exchange [label="JSON-импорт"];
+  exchange -> security [label="Проверка полей"];
+  web -> exports [label="Выгрузки"];
+  web -> db;
+  service -> db;
+  exchange -> db;
+}
