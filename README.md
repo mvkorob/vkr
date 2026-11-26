@@ -180,6 +180,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Проверенные сценарии обмена](docs/file_exchange_cases.md)
 - [Проверки](docs/verification.md)
 - [Тест-план и сценарии приёмки](docs/test_plan.md)
+- [Браузеры и снимки интерфейса](docs/acceptance/browser_protocol.md)
 - [Протокол CSV/XLSX](docs/acceptance/export_protocol.md)
 
 Система не настраивает оборудование защиты и не подключена к корпоративным каталогам.
