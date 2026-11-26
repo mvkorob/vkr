@@ -1,0 +1,29 @@
+digraph Database {
+  graph [label="Полная схема базы: 11 таблиц", labelloc=t, fontname="DejaVu Sans", fontsize=18, rankdir=LR, nodesep=.6, ranksep=1.1, bgcolor=white];
+  node [shape=record, fontname="DejaVu Sans", fontsize=10, margin="0.15,0.12"];
+  edge [fontname="DejaVu Sans", fontsize=9, arrowsize=.7];
+  application_settings [label="{application_settings|setting_key PK\lsetting_value\l}"];
+  assets [label="{assets|id PK\linventory_no\lname\llocation\lprotection_class\ldescription\lactive\lcreated_at\l}"];
+  audit_events [label="{audit_events|id PK\lactor_id FK\lticket_id FK\laction\ldetails\lcreated_at\l}"];
+  comments [label="{comments|id PK\lticket_id FK\lauthor_id FK\lbody\lcreated_at\l}"];
+  feedback_messages [label="{feedback_messages|id PK\lsender_name\lsender_email\lsubject\lbody\lstate\lcreated_at\l}"];
+  notifications [label="{notifications|id PK\luser_id FK\lticket_id FK\ltext\lis_read\lcreated_at\l}"];
+  service_catalog [label="{service_catalog|id PK\lcode\lname\ldescription\lcategory\lactive\l}"];
+  ticket_attachments [label="{ticket_attachments|id PK\lticket_id FK\lauthor_id FK\lfilename\lmime_type\lcontent\luploaded_at\l}"];
+  ticket_status_history [label="{ticket_status_history|id PK\lticket_id FK\lactor_id FK\lold_status\lnew_status\loccurred_at\l}"];
+  tickets [label="{tickets|id PK\ltitle\ldescription\lcategory\lpriority\lstatus\lasset_id FK\lauthor_id FK\lassignee_id FK\lcreated_at\lupdated_at\lclosed_at\lresolved_at\ldue_at\l}"];
+  users [label="{users|id PK\lusername\lfull_name\lpassword_hash\lrole\lactive\lcreated_at\l}"];
+  audit_events -> tickets [label="ticket_id → id"];
+  audit_events -> users [label="actor_id → id"];
+  comments -> users [label="author_id → id"];
+  comments -> tickets [label="ticket_id → id"];
+  notifications -> tickets [label="ticket_id → id"];
+  notifications -> users [label="user_id → id"];
+  ticket_attachments -> users [label="author_id → id"];
+  ticket_attachments -> tickets [label="ticket_id → id"];
+  ticket_status_history -> users [label="actor_id → id"];
+  ticket_status_history -> tickets [label="ticket_id → id"];
+  tickets -> users [label="assignee_id → id"];
+  tickets -> users [label="author_id → id"];
+  tickets -> assets [label="asset_id → id"];
+}
