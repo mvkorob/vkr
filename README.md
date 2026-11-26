@@ -185,6 +185,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Тест-план и сценарии приёмки](docs/test_plan.md)
 - [Требования и подтверждающие материалы](docs/acceptance/traceability.md)
 - [Исправления и повторные проверки](docs/acceptance/defects_register.md)
+- [Приёмка по ролям](docs/acceptance/role_checks.md)
 - [Проверка чистой установки](docs/acceptance/launch_walkthrough.md)
 - [Браузеры и снимки интерфейса](docs/acceptance/browser_protocol.md)
 - [Интерфейс на iPad, iPhone и Windows](docs/acceptance/devices_protocol.md)
