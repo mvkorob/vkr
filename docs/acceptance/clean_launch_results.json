@@ -1,0 +1,67 @@
+{
+  "source_commit": "b8c9f9af516a7baa23cb17c79536e3a4b6c6bd07",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "runtime": {
+    "python": "3.10.12",
+    "Flask": "3.1.2",
+    "Jinja2": "3.1.6",
+    "openpyxl": "3.1.5"
+  },
+  "method": "git archive, fresh venv without Flask, run.py automatic dependency installation, real local HTTP requests",
+  "cases": [
+    {
+      "case": "clean_checkout_and_environment",
+      "result": "passed",
+      "details": {
+        "flask_before_install": false,
+        "working_database_before_start": false
+      }
+    },
+    {
+      "case": "automatic_dependencies_and_health",
+      "result": "passed",
+      "details": {
+        "http_status": 200,
+        "launched_from_outside_checkout": true
+      }
+    },
+    {
+      "case": "first_start_creates_database_and_admin",
+      "result": "passed",
+      "details": {
+        "tables": 11,
+        "admin_accounts": 1
+      }
+    },
+    {
+      "case": "initial_admin_login",
+      "result": "passed",
+      "details": {
+        "http_status": 200
+      }
+    },
+    {
+      "case": "create_ticket_over_http",
+      "result": "passed",
+      "details": {
+        "ticket_id": 1
+      }
+    },
+    {
+      "case": "ticket_lifecycle",
+      "result": "passed",
+      "details": {
+        "status": "closed",
+        "history_entries": 4
+      }
+    },
+    {
+      "case": "restart_preserves_ticket_and_session",
+      "result": "passed",
+      "details": {
+        "new_admin_on_restart": false,
+        "integrity_check": "ok"
+      }
+    }
+  ]
+}
