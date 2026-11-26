@@ -177,6 +177,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [От формы до ответа Flask](docs/flask_routes_explained.md)
 - [Безопасность](docs/security.md)
 - [Обмен файлами](docs/file_exchange.md)
+- [Проверенные сценарии обмена](docs/file_exchange_cases.md)
 - [Проверки](docs/verification.md)
 - [Тест-план и сценарии приёмки](docs/test_plan.md)
 - [Протокол CSV/XLSX](docs/acceptance/export_protocol.md)
