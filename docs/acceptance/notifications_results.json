@@ -1,0 +1,38 @@
+{
+  "source_commit": "784a1883b41338416751f991270d6a06e05a85b4",
+  "method": "Temporary copy of demo database; service functions and Flask test client",
+  "cases": [
+    {
+      "case": "status_change_notifies_requester_except_actor",
+      "result": "passed"
+    },
+    {
+      "case": "requester_comment_notifies_assignee_except_author",
+      "result": "passed"
+    },
+    {
+      "case": "third_party_comment_notifies_both_participants",
+      "result": "passed"
+    },
+    {
+      "case": "notification_list_contains_only_current_user",
+      "result": "passed"
+    },
+    {
+      "case": "activity_and_notifications_render_for_requester",
+      "result": "passed"
+    },
+    {
+      "case": "mark_read_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "mark_read_changes_only_current_user",
+      "result": "passed"
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed"
+    }
+  ]
+}
