@@ -1,16 +1,17 @@
 digraph Database {
-  graph [label="Логическая модель данных", labelloc=t, fontsize=20, fontname="DejaVu Sans", rankdir=LR, nodesep=0.75, ranksep=0.85, pad="0.4", bgcolor=white, splines=polyline];
-  node [shape=record, color="#62717e", fontname="DejaVu Sans", fontsize=12, margin="0.15,0.14"];
-  edge [color="#667788", arrowsize=0.75, fontname="DejaVu Sans", fontsize=11];
-  users [label="{Пользователи|id (PK)\lлогин\lФИО\lроль\lпароль (хеш)\l}"];
-  assets [label="{Средства защиты|id (PK)\lинвентарный номер\lнаименование\lместоположение\l}"];
-  tickets [label="{Заявки|id (PK)\lтема, описание\lкатегория, приоритет\lстатус\lauthor_id (FK)\lassignee_id (FK)\lasset_id (FK)\l}"];
-  comments [label="{Комментарии|id (PK)\lticket_id (FK)\lauthor_id (FK)\lтекст\lдата\l}"];
-  audit [label="{Журнал действий|id (PK)\lticket_id (FK)\lactor_id (FK)\lсобытие\lдата\l}"];
-  {rank=same; users; assets;}
-  {rank=same; comments; audit;}
-  users -> tickets [label="заявитель / исполнитель", taillabel="1", headlabel="N"];
-  assets -> tickets [label="объект", taillabel="1", headlabel="N"];
-  tickets -> comments [label="1:N"];
-  tickets -> audit [label="1:N"];
+  graph [label="Основные связи заявок", labelloc=t, fontname="DejaVu Sans", fontsize=18, rankdir=LR, nodesep=.6, ranksep=1.1, bgcolor=white];
+  node [shape=record, fontname="DejaVu Sans", fontsize=10, margin="0.15,0.12"];
+  edge [fontname="DejaVu Sans", fontsize=9, arrowsize=.7];
+  assets [label="{assets|id PK\linventory_no\lname\llocation\lprotection_class\ldescription\lactive\lcreated_at\l}"];
+  audit_events [label="{audit_events|id PK\lactor_id FK\lticket_id FK\laction\ldetails\lcreated_at\l}"];
+  comments [label="{comments|id PK\lticket_id FK\lauthor_id FK\lbody\lcreated_at\l}"];
+  tickets [label="{tickets|id PK\ltitle\ldescription\lcategory\lpriority\lstatus\lasset_id FK\lauthor_id FK\lassignee_id FK\lcreated_at\lupdated_at\lclosed_at\lresolved_at\ldue_at\l}"];
+  users [label="{users|id PK\lusername\lfull_name\lpassword_hash\lrole\lactive\lcreated_at\l}"];
+  audit_events -> tickets [label="ticket_id → id"];
+  audit_events -> users [label="actor_id → id"];
+  comments -> users [label="author_id → id"];
+  comments -> tickets [label="ticket_id → id"];
+  tickets -> users [label="assignee_id → id"];
+  tickets -> users [label="author_id → id"];
+  tickets -> assets [label="asset_id → id"];
 }
