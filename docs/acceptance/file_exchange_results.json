@@ -1,0 +1,160 @@
+{
+  "source_commit": "914bdbad23ba27f47f54ca571a2444527919cff6",
+  "method": "Flask test client and direct exchange functions, temporary database copy",
+  "cases": [
+    {
+      "case": "registry_all",
+      "result": "passed",
+      "details": {
+        "records": 501,
+        "formats": [
+          "CSV",
+          "XLSX"
+        ],
+        "same_values": true
+      }
+    },
+    {
+      "case": "registry_all_501",
+      "result": "passed",
+      "details": {
+        "same_count_and_ticket_numbers": true
+      }
+    },
+    {
+      "case": "registry?status=closed",
+      "result": "passed",
+      "details": {
+        "records": 251,
+        "formats": [
+          "CSV",
+          "XLSX"
+        ],
+        "same_values": true
+      }
+    },
+    {
+      "case": "registry_closed_251",
+      "result": "passed",
+      "details": {
+        "same_count_and_ticket_numbers": true
+      }
+    },
+    {
+      "case": "registry?q=501",
+      "result": "passed",
+      "details": {
+        "records": 1,
+        "formats": [
+          "CSV",
+          "XLSX"
+        ],
+        "same_values": true
+      }
+    },
+    {
+      "case": "requester_export_denied",
+      "result": "passed",
+      "details": {
+        "status": 403,
+        "formats": [
+          "CSV",
+          "XLSX",
+          "JSON"
+        ]
+      }
+    },
+    {
+      "case": "json_web_cli_export",
+      "result": "passed",
+      "details": {
+        "same_values": true,
+        "items": 2
+      }
+    },
+    {
+      "case": "json_web_import_and_repeat",
+      "result": "passed",
+      "details": {
+        "first": {
+          "added": 1,
+          "skipped": 0
+        },
+        "repeat": {
+          "added": 0,
+          "skipped": 1
+        }
+      }
+    },
+    {
+      "case": "json_import_csrf",
+      "result": "passed",
+      "details": {
+        "status": 403
+      }
+    },
+    {
+      "case": "malformed_json",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "wrong_format",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "extra_item_field",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "duplicate_numbers",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "invalid_second_item",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "over_1000_items",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "over_2_mib",
+      "result": "passed",
+      "details": {
+        "rejected": true,
+        "asset_count_unchanged": true
+      }
+    },
+    {
+      "case": "demo_database_unchanged",
+      "result": "passed",
+      "details": {
+        "sha256": "e4b040ae0751b5387135c8372ea59238e58e382905169a7d1caab55e886e4955"
+      }
+    }
+  ]
+}
