@@ -188,6 +188,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Активность и уведомления](docs/acceptance/notifications_protocol.md)
 - [Справочник СЗИ](docs/acceptance/assets_protocol.md)
 - [Пользователи и аудит](docs/acceptance/users_audit_protocol.md)
+- [Услуги и обратная связь](docs/acceptance/services_feedback_protocol.md)
 - [Протокол CSV/XLSX](docs/acceptance/export_protocol.md)
 
 Система не настраивает оборудование защиты и не подключена к корпоративным каталогам.

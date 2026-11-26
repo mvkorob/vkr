@@ -1,0 +1,50 @@
+{
+  "source_commit": "439516549bd9ab49efd63f378ca2163e571cd224",
+  "method": "Flask test client on temporary demo database copy",
+  "cases": [
+    {
+      "case": "service_add_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "new_service_visible_in_public_catalog",
+      "result": "passed"
+    },
+    {
+      "case": "disabled_service_retained_in_admin_catalog",
+      "result": "passed"
+    },
+    {
+      "case": "service_can_be_enabled_again",
+      "result": "passed"
+    },
+    {
+      "case": "non_admin_management_denied",
+      "result": "passed"
+    },
+    {
+      "case": "feedback_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "guest_feedback_saved_as_new",
+      "result": "passed"
+    },
+    {
+      "case": "admin_reads_feedback",
+      "result": "passed"
+    },
+    {
+      "case": "admin_marks_feedback_processed_preserving_body",
+      "result": "passed"
+    },
+    {
+      "case": "invalid_email_rejected",
+      "result": "passed"
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed"
+    }
+  ]
+}
