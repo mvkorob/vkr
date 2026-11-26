@@ -1,0 +1,103 @@
+{
+  "date": "2026-11-26",
+  "browser": "Google Chrome 153.0.8010.52",
+  "source": "Static HTML from current Flask templates, demo database",
+  "screenshots": [
+    {
+      "file": "1440-admin_analytics.png",
+      "viewport_width": 1440,
+      "page": "admin_analytics",
+      "sha256": "fa79c0fb64b5e861cad8affda1f85660ee01f05043d2d2072620a3f19c9544f6"
+    },
+    {
+      "file": "1440-admin_users.png",
+      "viewport_width": 1440,
+      "page": "admin_users",
+      "sha256": "a5e0cc21b7c88f155938dff81ef98404bdd751f85eda0924ef3358e9837159f4"
+    },
+    {
+      "file": "1440-assets.png",
+      "viewport_width": 1440,
+      "page": "assets",
+      "sha256": "1ad2569d7090fb5493d47f38abbdfaff410fb7022c956cd13618d09387fd894b"
+    },
+    {
+      "file": "1440-dashboard.png",
+      "viewport_width": 1440,
+      "page": "dashboard",
+      "sha256": "c9622643628d247880dd79c6efb112efa096e03725310430714d5446210c3bb5"
+    },
+    {
+      "file": "1440-feedback.png",
+      "viewport_width": 1440,
+      "page": "feedback",
+      "sha256": "1241af02f4affea890ce9466eb51f768b09cb356a23ad4b701d820505680c548"
+    },
+    {
+      "file": "1440-login.png",
+      "viewport_width": 1440,
+      "page": "login",
+      "sha256": "b1272247e8c6e69932631db0ef7b9cf5194850332b199859616c1cd42e9b3a62"
+    },
+    {
+      "file": "1440-ticket_detail.png",
+      "viewport_width": 1440,
+      "page": "ticket_detail",
+      "sha256": "69ddfcaba43d73cdfbe673324bb40fdb40c0caecebc45f39763d7827105c7538"
+    },
+    {
+      "file": "1440-tickets.png",
+      "viewport_width": 1440,
+      "page": "tickets",
+      "sha256": "acb97aee5f47b622f0ac0e10be703d38cf394e46ac6e71e0a1c90f98a384eb2e"
+    },
+    {
+      "file": "390-admin_analytics.png",
+      "viewport_width": 390,
+      "page": "admin_analytics",
+      "sha256": "93b24c5c29cf040925bd51916fe5f065883dac364ef62dcbe79fdc07346b7318"
+    },
+    {
+      "file": "390-admin_users.png",
+      "viewport_width": 390,
+      "page": "admin_users",
+      "sha256": "745a8b2a0733866dbbb65e5f67ccf0bb58f6b6988db3a209b624834d7d19ab3b"
+    },
+    {
+      "file": "390-assets.png",
+      "viewport_width": 390,
+      "page": "assets",
+      "sha256": "91f146874a7d4b49fbdd5351556cdf2a606753cf2a27801754c2609852e8dbfe"
+    },
+    {
+      "file": "390-dashboard.png",
+      "viewport_width": 390,
+      "page": "dashboard",
+      "sha256": "a087d858cce3d06d9cc5a3883bc5a1efe91b6dafdac04bdca3d55ebcfada6a29"
+    },
+    {
+      "file": "390-feedback.png",
+      "viewport_width": 390,
+      "page": "feedback",
+      "sha256": "056fe18203a83e09100353baae475a72276f826f3eb936d28576bc1aeeb69f49"
+    },
+    {
+      "file": "390-login.png",
+      "viewport_width": 390,
+      "page": "login",
+      "sha256": "68573ac19563027e72dcab956357d8c0e8f379ac7abd25d17ac14f9233d75e66"
+    },
+    {
+      "file": "390-ticket_detail.png",
+      "viewport_width": 390,
+      "page": "ticket_detail",
+      "sha256": "b99995601047a1cdf0d70f7fe20903497d89dee92f11166335567ba1855c2e22"
+    },
+    {
+      "file": "390-tickets.png",
+      "viewport_width": 390,
+      "page": "tickets",
+      "sha256": "a6df69e240dfd58c0b5891d39bad9eb4f541e28ddabeb280dc86c54123746c80"
+    }
+  ]
+}
