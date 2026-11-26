@@ -1,0 +1,38 @@
+{
+  "source_commit": "916332b7c6e68dba31fb4bdf4d2c0b49f2d9f705",
+  "method": "Temporary demo database copy; Flask test client and service functions",
+  "cases": [
+    {
+      "case": "requester_and_operator_view_only",
+      "result": "passed"
+    },
+    {
+      "case": "create_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "admin_creates_asset",
+      "result": "passed"
+    },
+    {
+      "case": "edit_visible_in_linked_ticket",
+      "result": "passed"
+    },
+    {
+      "case": "archive_preserves_ticket_link_and_audit",
+      "result": "passed"
+    },
+    {
+      "case": "archived_asset_not_offered_for_new_ticket",
+      "result": "passed"
+    },
+    {
+      "case": "server_rejects_archived_asset",
+      "result": "passed"
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed"
+    }
+  ]
+}
