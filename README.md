@@ -169,6 +169,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 
 - [Руководство пользователя](docs/user_guide.md)
 - [Архитектура](docs/architecture.md)
+- [Устройство версии Flask](docs/architecture_flask.md)
 - [Объём исходников](docs/loc_audit.md)
 - [Состав версии 2.0.0](docs/release.md)
 - [Структура базы](docs/database.md)
