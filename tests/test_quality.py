@@ -52,6 +52,34 @@ def test_password_reset_only_for_admin(tmp_path):
     assert authenticate(path, "employee", "OldPassword123!") is not None
 
 
+@pytest.mark.parametrize("role", ["requester", "operator", "admin"])
+def test_statistics_empty_registry_has_zero_counts(db_path, role):
+    stats = statistics(db_path, {"id": 3, "role": role})
+    assert stats == {
+        "total": 0,
+        "open": 0,
+        "resolved": 0,
+        "critical": 0,
+        "by_status": {
+            "new": 0, "in_progress": 0, "on_hold": 0, "resolved": 0, "closed": 0,
+        },
+    }
+
+
+def test_statistics_empty_requester_ignores_other_users_tickets(db_path):
+    with connect(db_path) as db:
+        db.execute(
+            "INSERT INTO tickets(title,description,category,priority,author_id) "
+            "VALUES(?,?,?,?,?)",
+            ("Чужая заявка", "Проверка пустой статистики", "access", "critical", 3),
+        )
+        db.commit()
+    stats = statistics(db_path, {"id": 4, "role": "requester"})
+    assert all(stats[key] == 0 for key in ("total", "open", "resolved", "critical"))
+    assert all(value == 0 for value in stats["by_status"].values())
+    assert statistics(db_path, {"id": 1, "role": "admin"})["critical"] == 1
+
+
 def test_statistics_not_limited_to_first_500_tickets(db_path):
     user = {"id": 3, "role": "requester"}
     with connect(db_path) as db:

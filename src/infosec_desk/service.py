@@ -414,12 +414,12 @@ def statistics(db_path, user):
     with connect(db_path) as db:
         row = db.execute(
             "SELECT COUNT(*) AS total,\n"
-            "                SUM(CASE WHEN status NOT IN ('resolved','closed') "
-            "THEN 1 ELSE 0 END) AS open,\n"
-            "                SUM(CASE WHEN status IN ('resolved','closed') "
-            "THEN 1 ELSE 0 END) AS resolved,\n"
-            "                SUM(CASE WHEN priority='critical' AND status!='closed' "
-            "THEN 1 ELSE 0 END)\n"
+            "                COALESCE(SUM(CASE WHEN status NOT IN ('resolved','closed') "
+            "THEN 1 ELSE 0 END), 0) AS open,\n"
+            "                COALESCE(SUM(CASE WHEN status IN ('resolved','closed') "
+            "THEN 1 ELSE 0 END), 0) AS resolved,\n"
+            "                COALESCE(SUM(CASE WHEN priority='critical' AND status!='closed' "
+            "THEN 1 ELSE 0 END), 0)\n"
             "                    AS critical\n"
             f"            FROM tickets {condition}",
             params,
