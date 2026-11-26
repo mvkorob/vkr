@@ -1,0 +1,80 @@
+{
+  "source_commit": "f194e0571bac135c3c02ad3d14f5e1ce94a9ab2c",
+  "date": "2026-11-26",
+  "method": "Real local HTTP server and temporary database; SQLite checks",
+  "checks": [
+    {
+      "case": "three_role_logins",
+      "result": "passed",
+      "details": {
+        "roles": [
+          "employee",
+          "operator",
+          "admin"
+        ]
+      }
+    },
+    {
+      "case": "ticket_created",
+      "result": "passed",
+      "details": {
+        "ticket_id": 502,
+        "number": "З-000502",
+        "author": "employee"
+      }
+    },
+    {
+      "case": "operator_assigned",
+      "result": "passed",
+      "details": {
+        "assignee": "operator",
+        "status": "in_progress"
+      }
+    },
+    {
+      "case": "two_comments_saved",
+      "result": "passed",
+      "details": {
+        "count": 2
+      }
+    },
+    {
+      "case": "attachment_saved_and_downloaded",
+      "result": "passed",
+      "details": {
+        "filename": "result.txt",
+        "bytes_match": true
+      }
+    },
+    {
+      "case": "closed_with_dates_and_history",
+      "result": "passed",
+      "details": {
+        "states": [
+          "new",
+          "in_progress",
+          "resolved",
+          "closed"
+        ],
+        "resolved_at_set": true,
+        "closed_at_set": true
+      }
+    },
+    {
+      "case": "notifications_export_audit",
+      "result": "passed",
+      "details": {
+        "notification_visible": true,
+        "csv_has_ticket": true,
+        "audit_status": 200
+      }
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed",
+      "details": {
+        "sha256_matches": true
+      }
+    }
+  ]
+}
