@@ -1,0 +1,107 @@
+{
+  "source_commit": "cd292fd5c683285ed26a16ae6fea79f21ea8429d",
+  "method": "Flask test client, real login form for each role, temporary demo database",
+  "checks": [
+    {
+      "role": "guest",
+      "case": "public_and_protected_pages",
+      "result": "passed",
+      "details": {
+        "public_status": 200,
+        "protected_status": 303
+      }
+    },
+    {
+      "role": "employee",
+      "case": "login",
+      "result": "passed",
+      "details": {
+        "status": 303
+      }
+    },
+    {
+      "role": "employee",
+      "case": "create_own_and_deny_foreign_ticket",
+      "result": "passed",
+      "details": {
+        "own": 200,
+        "foreign": 404
+      }
+    },
+    {
+      "role": "employee",
+      "case": "admin_export_and_status_denied",
+      "result": "passed",
+      "details": {
+        "status": 403
+      }
+    },
+    {
+      "role": "operator",
+      "case": "login",
+      "result": "passed",
+      "details": {
+        "status": 303
+      }
+    },
+    {
+      "role": "operator",
+      "case": "all_tickets_export_and_admin_denied",
+      "result": "passed",
+      "details": {
+        "ticket_and_export": 200,
+        "admin": 403
+      }
+    },
+    {
+      "role": "operator",
+      "case": "close_ticket_with_history",
+      "result": "passed",
+      "details": {
+        "status": "closed",
+        "history_entries": 4
+      }
+    },
+    {
+      "role": "admin",
+      "case": "login",
+      "result": "passed",
+      "details": {
+        "status": 303
+      }
+    },
+    {
+      "role": "admin",
+      "case": "seven_admin_pages",
+      "result": "passed",
+      "details": {
+        "count": 7,
+        "status": 200
+      }
+    },
+    {
+      "role": "admin",
+      "case": "create_asset",
+      "result": "passed",
+      "details": {
+        "saved": true
+      }
+    },
+    {
+      "role": "admin",
+      "case": "csrf_enforced",
+      "result": "passed",
+      "details": {
+        "status": 403
+      }
+    },
+    {
+      "role": "all",
+      "case": "source_database_unchanged",
+      "result": "passed",
+      "details": {
+        "sha256_matches": true
+      }
+    }
+  ]
+}
