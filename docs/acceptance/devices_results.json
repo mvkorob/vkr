@@ -1,0 +1,126 @@
+{
+  "collection_date": "2026-11-25",
+  "method": "Review of existing user-supplied physical-device screenshots; SHA-256 and JPEG dimensions checked",
+  "screenshots": [
+    {
+      "device": "iPad",
+      "browser": "Safari",
+      "page": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/ipad-safari/01-login.jpg",
+      "image_pixels": {
+        "width": 889,
+        "height": 1280
+      },
+      "sha256": "c47cbb2fe556486ee19b766ccd1a864cbb8b72128baf7932f33d74936747f695"
+    },
+    {
+      "device": "iPhone",
+      "browser": "Яндекс Браузер",
+      "page": "Вход, страница прокручена",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/iphone-yandex/01-login-scrolled.jpg",
+      "image_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "a41e3e34a4a61845c7dafc6bfb533f4fe3895bee4bad58ece7fc8ac58fccfe47"
+    },
+    {
+      "device": "iPhone",
+      "browser": "Safari",
+      "page": "Вход и верхнее меню",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/iphone-safari/01-login-menu.jpg",
+      "image_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "bf2c3bb5ed87f5c70e52b60db8d8e7d951e874beeb7ef4e1a055a9a85967f384"
+    },
+    {
+      "device": "iPhone",
+      "browser": "Safari",
+      "page": "Вход, поле логина в фокусе",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/iphone-safari/02-login-focused.jpg",
+      "image_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "4d5f8ecf4e5b124eae0ff5447004cfb7de66c063c9e6aaad5de030e9f4bde7a1"
+    },
+    {
+      "device": "iPhone",
+      "browser": "Safari",
+      "page": "Вход, страница прокручена",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/iphone-safari/03-login-scrolled.jpg",
+      "image_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "d6fef12c8fed5f6b2b1f64259100d4a426db07197bbda9f263d2d04449f4014c"
+    },
+    {
+      "device": "iPhone",
+      "browser": "Safari",
+      "page": "Категории и прокрутка меню",
+      "url": "https://infosec-service-desk-1.onrender.com/public/categories",
+      "screenshot": "browser_screenshots/real-devices/iphone-safari/04-categories-menu.jpg",
+      "image_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "aeaba8d46d49bb7a1ddbb388a951a71c076906c49d403124e1fee13ffbf1f8bf"
+    },
+    {
+      "device": "ПК Windows",
+      "browser": "Chrome",
+      "page": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/windows-chrome/login.jpg",
+      "image_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "d3e2183091b797e9508c6546d5eb1db61ff4c076c8e60b4b0ccbf1e34e74ab24"
+    },
+    {
+      "device": "ПК Windows",
+      "browser": "Chrome",
+      "page": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "screenshot": "browser_screenshots/real-devices/windows-chrome/services.jpg",
+      "image_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "e42a425cc83d1e4475c3305a24c7f4e37becd7c56c4287f2e719e46c2f3332a1"
+    },
+    {
+      "device": "ПК Windows",
+      "browser": "Microsoft Edge",
+      "page": "Услуги, уведомления браузера",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "screenshot": "browser_screenshots/real-devices/windows-edge/services.jpg",
+      "image_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "e667523af21dacf73bc39ca9d2aa9c41de7cad9f0e942a479a4c504675c736d9"
+    },
+    {
+      "device": "ПК Windows",
+      "browser": "Microsoft Edge",
+      "page": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "screenshot": "browser_screenshots/real-devices/windows-edge/login.jpg",
+      "image_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "f258c072bc62956691b25ce616816ef950a1a9746696472c43b14956f5d65c21"
+    }
+  ]
+}
