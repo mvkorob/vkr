@@ -1,0 +1,21 @@
+{
+  "source_commit": "f194e0571bac135c3c02ad3d14f5e1ce94a9ab2c",
+  "integrity_check": "ok",
+  "foreign_key_violations": 0,
+  "tables": {
+    "application_settings": 0,
+    "assets": 2,
+    "audit_events": 7,
+    "comments": 2,
+    "feedback_messages": 0,
+    "notifications": 5,
+    "service_catalog": 5,
+    "ticket_attachments": 0,
+    "ticket_status_history": 1254,
+    "tickets": 501,
+    "users": 3
+  },
+  "foreign_keys": 13,
+  "closed_tickets": 251,
+  "sha256": "e4b040ae0751b5387135c8372ea59238e58e382905169a7d1caab55e886e4955"
+}
