@@ -1,0 +1,37 @@
+{
+  "source_commit": "f194e0571bac135c3c02ad3d14f5e1ce94a9ab2c",
+  "date": "2026-11-26",
+  "method": "Real local HTTP server and temporary database; SQLite checks",
+  "checks": [
+    {
+      "case": "backup_contains_scenario",
+      "result": "passed",
+      "details": {
+        "integrity_check": "ok",
+        "ticket_status": "closed"
+      }
+    },
+    {
+      "case": "backup_overwrite_rejected",
+      "result": "passed",
+      "details": {
+        "existing_backup_preserved": true
+      }
+    },
+    {
+      "case": "version_metadata_checked",
+      "result": "passed",
+      "details": {
+        "installed": "2.0.0",
+        "available": "2.0.1"
+      }
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed",
+      "details": {
+        "sha256_matches": true
+      }
+    }
+  ]
+}
