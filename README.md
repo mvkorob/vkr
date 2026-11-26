@@ -174,6 +174,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 - [Состав версии 2.0.0](docs/release.md)
 - [Структура базы](docs/database.md)
 - [Пояснения к коду](docs/code_guide.md)
+- [От формы до ответа Flask](docs/flask_routes_explained.md)
 - [Безопасность](docs/security.md)
 - [Обмен файлами](docs/file_exchange.md)
 - [Проверки](docs/verification.md)
