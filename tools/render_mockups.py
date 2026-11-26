@@ -31,6 +31,9 @@ PAGES = {
     "public_help": "/public/help",
     "public_contacts": "/public/contacts",
     "public_rules": "/public/rules",
+    "feedback": "/feedback",
+    "profile": "/profile",
+    "my_help": "/my-help",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
@@ -104,7 +107,7 @@ def main():
             for name in args.pages:
                 with client.session_transaction() as session:
                     session.clear()
-                    if name != "login" and not name.startswith("public_"):
+                    if name not in ("login", "feedback") and not name.startswith("public_"):
                         session["user_id"] = 3
                 with patch.object(service, "list_tickets", side_effect=preview_tickets):
                     response = client.get(PAGES[name])
