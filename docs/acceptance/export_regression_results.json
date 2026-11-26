@@ -1,0 +1,24 @@
+{
+  "issue": "DEF-01",
+  "checked_at": "2026-11-26",
+  "historical_commit": "9b12f31ee55eabd6a695f6af168a99a2e1938a3e",
+  "current_commit": "67a6309ed3b6d2ba2112e528987182a4ea83b192",
+  "method": "Historical and current selection functions on same temporary demo copy; current CSV/XLSX via Flask test client",
+  "historical_selection_records": 500,
+  "current_selection_records": 501,
+  "export_checks": [
+    {
+      "filter": "all",
+      "csv_records": 501,
+      "xlsx_records": 501,
+      "result": "passed"
+    },
+    {
+      "filter": "?status=closed",
+      "csv_records": 251,
+      "xlsx_records": 251,
+      "result": "passed"
+    }
+  ],
+  "source_database_unchanged": true
+}
