@@ -6,7 +6,29 @@ InfoSec Service Desk предназначена для регистрации и
 
 HTTP-запросы обрабатывает Flask. HTML формируется шаблонами Jinja2, выгрузка XLSX использует openpyxl.
 
-Схема архитектуры: [SVG](diagrams/architecture.svg), [PNG](images/architecture.png).
+Схема архитектуры: [SVG](diagrams/architecture.svg), [PNG](diagrams/architecture.png),
+[исходник DOT](diagrams/architecture.dot).
+
+Общая схема показывает путь запроса от браузера через Flask к предметным
+операциям и SQLite. HTML формируется шаблонами Jinja2, CSS обслуживается
+как статический ресурс. Маршруты также читают базу для отображения данных
+и экспорта. Подробные зависимости модулей приведены на схеме компонентов ниже.
+
+Локальный запуск использует встроенный сервер Flask. Для сетевого запуска
+в конфигурации Render и Docker указан Gunicorn с точкой входа `wsgi:app`.
+Настройка запуска описана в [руководстве по развёртыванию](deployment_render.md).
+
+PNG-копии архитектуры и основных связей базы в `docs/images/` совпадают
+с соответствующими изображениями в `docs/diagrams/`.
+
+Повторное построение общей схемы:
+
+```bash
+dot -Tsvg docs/diagrams/architecture.dot -o docs/diagrams/architecture.svg
+dot -Tpng docs/diagrams/architecture.dot -o docs/diagrams/architecture.png
+```
+
+После построения обновите копию `docs/images/architecture.png`.
 
 ## Процесс до автоматизации
 
