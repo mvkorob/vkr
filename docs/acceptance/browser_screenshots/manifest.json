@@ -1,0 +1,1357 @@
+{
+  "site": "https://infosec-service-desk-1.onrender.com/",
+  "collection_date": "2026-11-25",
+  "scope": "Публичные страницы опубликованного сайта Render, внешний вид и адаптивная верстка",
+  "screenshots": [
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:32:09+03:00",
+      "screenshot": "chrome/phone-390x844/01-login.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false,
+      "sha256": "7caf9dcf2f701ed289a5476924a85c3e129bd34875979212600d15b3636f5994",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:10+03:00",
+      "screenshot": "chrome/phone-390x844/02-overview.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 1002
+      },
+      "horizontal_overflow": false,
+      "sha256": "4bf5336150853c397160fe0e7e366adcae4566887fe7669b48b71b2f525d37a2",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:11+03:00",
+      "screenshot": "chrome/phone-390x844/03-services.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 1290
+      },
+      "horizontal_overflow": false,
+      "sha256": "14ae6942c93f17dc8783ba455213aded188240008b8f85239c78942b33d4eecb",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:12+03:00",
+      "screenshot": "chrome/phone-390x844/04-submit.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 978
+      },
+      "horizontal_overflow": false,
+      "sha256": "11f9203a11b5559cf3ed879c828261b2abede4c48af00d521bce105e44516b2a",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:13+03:00",
+      "screenshot": "chrome/phone-390x844/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 978
+      },
+      "horizontal_overflow": false,
+      "sha256": "e9543eec2746a749823f0be8ed886dd994b20bece915ddd382b3a28ccbd7f5ec",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:13+03:00",
+      "screenshot": "chrome/phone-390x844/06-security.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 954
+      },
+      "horizontal_overflow": false,
+      "sha256": "b12a25a93659ea751f6df2ae9f26af75e33776dbb46c1ec40f79e234e5e65074",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:32:04+03:00",
+      "screenshot": "chrome/tablet-768x1024/01-login.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "edc8b4aca199cdacfe79eaf5bc3fc4d543d82be4675550b06a0a8a7ef0bb390e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:05+03:00",
+      "screenshot": "chrome/tablet-768x1024/02-overview.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "1de05cc1751432c94394b5feeb6be77431920c29886ed8bd98eed4b7b92a2052",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:06+03:00",
+      "screenshot": "chrome/tablet-768x1024/03-services.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "0d316379e91a40d354c8ed6f5e814139ce7bc7987f6046887052b7d4434b01ae",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:07+03:00",
+      "screenshot": "chrome/tablet-768x1024/04-submit.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "942781967b876d850745b30daaae72765c6e5496c7f3832275709124131828b5",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:08+03:00",
+      "screenshot": "chrome/tablet-768x1024/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "df96c7817c1bf1c13450beac806c850a4cd8cf2919ab80e421c4856d2424f52c",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:08+03:00",
+      "screenshot": "chrome/tablet-768x1024/06-security.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "ba52251cca3d5d691d30ec85fced469a5337c951d51c68d936dac88b46b8eb00",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:31:59+03:00",
+      "screenshot": "chrome/laptop-1366x768/01-login.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "c0fa67c33c25f7645a11791545b98a2a8e18361db42fd42a658eb41a5f064d1e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:00+03:00",
+      "screenshot": "chrome/laptop-1366x768/02-overview.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "b22656dc13e0419b1a69585a88f0ce18253266be6179ec7f24db9f5220bcca1c",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:00+03:00",
+      "screenshot": "chrome/laptop-1366x768/03-services.png",
+      "screenshot_pixels": {
+        "width": 1351,
+        "height": 839
+      },
+      "horizontal_overflow": false,
+      "sha256": "bcdfe16bcf3c7e3a56dc67ecbd9137aafb33ab3248695821be5712b1c833bb4d",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:01+03:00",
+      "screenshot": "chrome/laptop-1366x768/04-submit.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "868c004a8fbf3c6e96b4708dbb9ad29663126f450950087b683e3ac08ff01886",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:02+03:00",
+      "screenshot": "chrome/laptop-1366x768/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 1351,
+        "height": 868
+      },
+      "horizontal_overflow": false,
+      "sha256": "a5ee1ceedf7161ffe9090ea84e9a5ec56b79b23cd71cf7385d34e99332af8587",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:03+03:00",
+      "screenshot": "chrome/laptop-1366x768/06-security.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "2440d101326f40336907fc6dcf2235e1d2f20cae45f0b5bd651421519aa57aba",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:31:53+03:00",
+      "screenshot": "chrome/desktop-1440x900/01-login.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "b1272247e8c6e69932631db0ef7b9cf5194850332b199859616c1cd42e9b3a62",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:31:54+03:00",
+      "screenshot": "chrome/desktop-1440x900/02-overview.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "c9a5b1475ce6676b44f46a2c88a34b08b752982a5198853b0a5b7e9f294f1b7e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:31:55+03:00",
+      "screenshot": "chrome/desktop-1440x900/03-services.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "0e5b4b68cee3e0d93ff90e88cdc7df850be4b6a68b3688c8593f8047a414db6e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:31:56+03:00",
+      "screenshot": "chrome/desktop-1440x900/04-submit.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "16e0b72c69abe3a9da9641f69cc73cf3c341669038657905a26bdb13ba40e85c",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:31:57+03:00",
+      "screenshot": "chrome/desktop-1440x900/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "1241af02f4affea890ce9466eb51f768b09cb356a23ad4b701d820505680c548",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "chrome",
+      "browser_version": "Google Chrome 153.0.8010.52",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:31:57+03:00",
+      "screenshot": "chrome/desktop-1440x900/06-security.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "141b121ef0d8f680de768ee76631843a06bc99a28debe11c8af1380f5deaab43",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:32:12+03:00",
+      "screenshot": "firefox/phone-390x844/01-login.png",
+      "screenshot_pixels": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontal_overflow": false,
+      "sha256": "95d3d49de03ee785788dcf13e1e31c159bfe430891602032d384dffeb0518ae3",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:13+03:00",
+      "screenshot": "firefox/phone-390x844/02-overview.png",
+      "screenshot_pixels": {
+        "width": 378,
+        "height": 1057
+      },
+      "horizontal_overflow": false,
+      "sha256": "2cd4582f80c954c4269bc129a318cf9928e1d2030ef08bb9a853d4a589ca7f2c",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:14+03:00",
+      "screenshot": "firefox/phone-390x844/03-services.png",
+      "screenshot_pixels": {
+        "width": 378,
+        "height": 1300
+      },
+      "horizontal_overflow": false,
+      "sha256": "83f5593121be3c08b80c3fd3066df3da112b551b53b37ff418f03f5e512f05a1",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:15+03:00",
+      "screenshot": "firefox/phone-390x844/04-submit.png",
+      "screenshot_pixels": {
+        "width": 378,
+        "height": 1033
+      },
+      "horizontal_overflow": false,
+      "sha256": "8a32f9af5a11a4e1a75be8a0049648a4081a648a6ffcb8ff35f2753c2832d030",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:15+03:00",
+      "screenshot": "firefox/phone-390x844/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 378,
+        "height": 984
+      },
+      "horizontal_overflow": false,
+      "sha256": "0f5ed9459a3528fe2d04e060950078b1748aec7b1fc447d499c4aa940e0a1b2c",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "phone",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:16+03:00",
+      "screenshot": "firefox/phone-390x844/06-security.png",
+      "screenshot_pixels": {
+        "width": 378,
+        "height": 986
+      },
+      "horizontal_overflow": false,
+      "sha256": "52bbf6b6c485b2674459bc33fc51e3fa6e0fefc0de17403f5c3a14c3b5772cfe",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:32:07+03:00",
+      "screenshot": "firefox/tablet-768x1024/01-login.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "e6f8cea0e597d593afba1493694ddc9f79453be63a0c6a4388be10b01496f384",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:08+03:00",
+      "screenshot": "firefox/tablet-768x1024/02-overview.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "0f5e2a8d538b534438135be4dc93a0bc267aad3c15104c09c9981588e2b09e1e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:09+03:00",
+      "screenshot": "firefox/tablet-768x1024/03-services.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "a60486cc969a68ad75b20893580dbe00c02ce18e270aebb50df57c159e5dbc63",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:10+03:00",
+      "screenshot": "firefox/tablet-768x1024/04-submit.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "75f55109ddeaf929299004ea560602b83bd26a7506103b59e3fff6c49600f168",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:10+03:00",
+      "screenshot": "firefox/tablet-768x1024/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "aaf9f21a5276271794aa01c67515f4330afba0f7382c9c388e2a578e613c1577",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "tablet",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:11+03:00",
+      "screenshot": "firefox/tablet-768x1024/06-security.png",
+      "screenshot_pixels": {
+        "width": 768,
+        "height": 1024
+      },
+      "horizontal_overflow": false,
+      "sha256": "b97c247667c0aa31b88731f0b3453a4d4d4de917891d9ae6f667d4acefff9444",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:32:02+03:00",
+      "screenshot": "firefox/laptop-1366x768/01-login.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "a5ab41d2932f1f1b96e6aa5904b627e8cb26714d14f56303ac5828fefe11a3fb",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:32:03+03:00",
+      "screenshot": "firefox/laptop-1366x768/02-overview.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "18956d5b7e060ad004fd64474949b89f22f41f731fbeaa32a0d9ed0f1205e023",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:32:04+03:00",
+      "screenshot": "firefox/laptop-1366x768/03-services.png",
+      "screenshot_pixels": {
+        "width": 1354,
+        "height": 843
+      },
+      "horizontal_overflow": false,
+      "sha256": "bff3f6fc8727fa7c433c483c37225e67d8272c0d4c87562530fe33b07e3a1f16",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:05+03:00",
+      "screenshot": "firefox/laptop-1366x768/04-submit.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "3a9ed04a8cf6f3b3c71791d6d2223b11c4751e2917eadafcd6cced70485e24cd",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:05+03:00",
+      "screenshot": "firefox/laptop-1366x768/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 1354,
+        "height": 868
+      },
+      "horizontal_overflow": false,
+      "sha256": "1db3dd6f9602ac2b1fdab9f1d0a7f58e76910bb46a21cb03b41930a808cabad1",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "laptop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:06+03:00",
+      "screenshot": "firefox/laptop-1366x768/06-security.png",
+      "screenshot_pixels": {
+        "width": 1366,
+        "height": 768
+      },
+      "horizontal_overflow": false,
+      "sha256": "7ca2232f1daef2950090d6daca7c2cb008237e387f02ee43180317142a2642d0",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "captured_at": "2026-11-25T08:31:57+03:00",
+      "screenshot": "firefox/desktop-1440x900/01-login.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "e24c07fdd38cbb277bb106b99e2b5668369bd8653d70d6e7445fcea577d55da5",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "О службе",
+      "url": "https://infosec-service-desk-1.onrender.com/public/overview",
+      "captured_at": "2026-11-25T08:31:58+03:00",
+      "screenshot": "firefox/desktop-1440x900/02-overview.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "d72e5b1353eaeb0a1d804f5835c5065506723beead51cc4f7d5e895346b77d3f",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "captured_at": "2026-11-25T08:31:59+03:00",
+      "screenshot": "firefox/desktop-1440x900/03-services.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "5389993444493a1cc29bc247d89d91546c9579657bff87bd9ec71f73ea89e790",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Как подать заявку",
+      "url": "https://infosec-service-desk-1.onrender.com/public/submit",
+      "captured_at": "2026-11-25T08:32:00+03:00",
+      "screenshot": "firefox/desktop-1440x900/04-submit.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "f11003cb5276de37ab039adc74f667cb3b64355cfbe8715326997a1d259f8aa9",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Обратная связь",
+      "url": "https://infosec-service-desk-1.onrender.com/feedback",
+      "captured_at": "2026-11-25T08:32:00+03:00",
+      "screenshot": "firefox/desktop-1440x900/05-feedback.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "8a8d779f979aa65e080a571a16f67f86e629968fafabd8c2a44795782e9cd17e",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "firefox",
+      "browser_version": "Mozilla Firefox 160.0.1",
+      "os": "Linux",
+      "device_label": "desktop",
+      "device_test": "viewport_emulation",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "page_label": "Безопасность",
+      "url": "https://infosec-service-desk-1.onrender.com/public/security",
+      "captured_at": "2026-11-25T08:32:01+03:00",
+      "screenshot": "firefox/desktop-1440x900/06-security.png",
+      "screenshot_pixels": {
+        "width": 1440,
+        "height": 900
+      },
+      "horizontal_overflow": false,
+      "sha256": "b53ad0ea9f792cc7bb13ae4f64fb0660384ddaf5f41f8e287d649f3c2632b1ec",
+      "styles": [
+        "https://infosec-service-desk-1.onrender.com/static/style.css?v=4"
+      ],
+      "font_ready": true
+    },
+    {
+      "browser": "safari",
+      "os": "iPadOS",
+      "device_label": "iPad",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T08:34:12+03:00",
+      "screenshot": "real-devices/ipad-safari/01-login.jpg",
+      "screenshot_pixels": {
+        "width": 889,
+        "height": 1280
+      },
+      "sha256": "c47cbb2fe556486ee19b766ccd1a864cbb8b72128baf7932f33d74936747f695"
+    },
+    {
+      "browser": "yandex",
+      "os": "iOS",
+      "device_label": "iPhone",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход, страница прокручена",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T08:34:16+03:00",
+      "screenshot": "real-devices/iphone-yandex/01-login-scrolled.jpg",
+      "screenshot_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "a41e3e34a4a61845c7dafc6bfb533f4fe3895bee4bad58ece7fc8ac58fccfe47"
+    },
+    {
+      "browser": "safari",
+      "os": "iOS",
+      "device_label": "iPhone",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход и верхнее меню",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T08:34:19+03:00",
+      "screenshot": "real-devices/iphone-safari/01-login-menu.jpg",
+      "screenshot_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "bf2c3bb5ed87f5c70e52b60db8d8e7d951e874beeb7ef4e1a055a9a85967f384"
+    },
+    {
+      "browser": "safari",
+      "os": "iOS",
+      "device_label": "iPhone",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход, поле логина в фокусе",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T08:34:22+03:00",
+      "screenshot": "real-devices/iphone-safari/02-login-focused.jpg",
+      "screenshot_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "4d5f8ecf4e5b124eae0ff5447004cfb7de66c063c9e6aaad5de030e9f4bde7a1"
+    },
+    {
+      "browser": "safari",
+      "os": "iOS",
+      "device_label": "iPhone",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход, страница прокручена",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T08:34:25+03:00",
+      "screenshot": "real-devices/iphone-safari/03-login-scrolled.jpg",
+      "screenshot_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "d6fef12c8fed5f6b2b1f64259100d4a426db07197bbda9f263d2d04449f4014c"
+    },
+    {
+      "browser": "safari",
+      "os": "iOS",
+      "device_label": "iPhone",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Категории и прокрутка меню",
+      "url": "https://infosec-service-desk-1.onrender.com/public/categories",
+      "received_at": "2026-11-25T08:34:28+03:00",
+      "screenshot": "real-devices/iphone-safari/04-categories-menu.jpg",
+      "screenshot_pixels": {
+        "width": 750,
+        "height": 1624
+      },
+      "sha256": "aeaba8d46d49bb7a1ddbb388a951a71c076906c49d403124e1fee13ffbf1f8bf"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows",
+      "device_label": "ПК Windows",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T09:12:43+03:00",
+      "screenshot": "real-devices/windows-chrome/login.jpg",
+      "screenshot_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "d3e2183091b797e9508c6546d5eb1db61ff4c076c8e60b4b0ccbf1e34e74ab24"
+    },
+    {
+      "browser": "chrome",
+      "os": "Windows",
+      "device_label": "ПК Windows",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Услуги",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "received_at": "2026-11-25T09:12:46+03:00",
+      "screenshot": "real-devices/windows-chrome/services.jpg",
+      "screenshot_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "e42a425cc83d1e4475c3305a24c7f4e37becd7c56c4287f2e719e46c2f3332a1"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows",
+      "device_label": "ПК Windows",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Услуги, уведомления браузера",
+      "url": "https://infosec-service-desk-1.onrender.com/public/services",
+      "received_at": "2026-11-25T09:12:49+03:00",
+      "screenshot": "real-devices/windows-edge/services.jpg",
+      "screenshot_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "e667523af21dacf73bc39ca9d2aa9c41de7cad9f0e942a479a4c504675c736d9"
+    },
+    {
+      "browser": "edge",
+      "os": "Windows",
+      "device_label": "ПК Windows",
+      "device_test": "physical_device_user_supplied",
+      "page_label": "Вход",
+      "url": "https://infosec-service-desk-1.onrender.com/login",
+      "received_at": "2026-11-25T09:12:52+03:00",
+      "screenshot": "real-devices/windows-edge/login.jpg",
+      "screenshot_pixels": {
+        "width": 1280,
+        "height": 720
+      },
+      "sha256": "f258c072bc62956691b25ce616816ef950a1a9746696472c43b14956f5d65c21"
+    }
+  ]
+}
