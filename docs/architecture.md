@@ -83,6 +83,33 @@ dot -Tsvg docs/diagrams/functions.dot -o docs/diagrams/functions.svg
 dot -Tpng docs/diagrams/functions.dot -o docs/diagrams/functions.png
 ```
 
+## Компоненты веб-приложения
+
+![Компоненты и связи веб-приложения](diagrams/components.svg)
+
+[Исходник DOT](diagrams/components.dot), [изображение PNG](diagrams/components.png).
+
+`web.py` принимает HTTP-запросы, проверяет доступ по ролям и передаёт данные
+в шаблоны Jinja2. Предметные операции выполняет `service.py`; подключения
+и транзакции SQLite предоставляет `db.py`. Маршруты также обращаются к базе
+для чтения и экспорта данных.
+
+`security.py` содержит проверку полей, хеширование паролей и функции CSRF.
+Его используют маршруты, предметные операции и JSON-импорт справочника СЗИ.
+Импорт выполняет `exchange.py`, а CSV, XLSX и JSON-экспорт реализованы
+в `web.py`. Для XLSX используется openpyxl.
+
+Блок выгрузок на схеме обозначает группу операций внутри `web.py`.
+Схема описывает обработку веб-запросов; команды обслуживания базы описаны
+в составе модулей и руководстве по запуску.
+
+Повторное построение изображений:
+
+```bash
+dot -Tsvg docs/diagrams/components.dot -o docs/diagrams/components.svg
+dot -Tpng docs/diagrams/components.dot -o docs/diagrams/components.png
+```
+
 ## Состав модулей
 
 - `web.py` - HTTP-маршруты, отображение форм, контроль доступа, проверка CSRF
