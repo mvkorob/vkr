@@ -168,6 +168,7 @@ vendor/                   PySocks для установки через SOCKS-п�
 ## Документация
 
 - [Отчёт по преддипломной практике](practice_docs/README.md)
+- [Техническое задание](practice_docs/Техническое_задание.docx)
 
 - [Руководство пользователя](docs/user_guide.md)
 - [Архитектура](docs/architecture.md)
