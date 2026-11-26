@@ -1,0 +1,38 @@
+{
+  "source_commit": "3ca7417877d249a0122ffd31b3862507ed9ac0e5",
+  "method": "Temporary database copy, Flask test client and service functions",
+  "cases": [
+    {
+      "case": "non_admin_users_and_audit_denied",
+      "result": "passed"
+    },
+    {
+      "case": "user_creation_requires_csrf",
+      "result": "passed"
+    },
+    {
+      "case": "admin_creates_user_and_user_creates_ticket",
+      "result": "passed"
+    },
+    {
+      "case": "edit_updates_linked_author_name",
+      "result": "passed"
+    },
+    {
+      "case": "disable_blocks_login_preserves_ticket",
+      "result": "passed"
+    },
+    {
+      "case": "edit_and_disable_logged_with_actor",
+      "result": "passed"
+    },
+    {
+      "case": "self_disable_rejected",
+      "result": "passed"
+    },
+    {
+      "case": "source_database_unchanged",
+      "result": "passed"
+    }
+  ]
+}
