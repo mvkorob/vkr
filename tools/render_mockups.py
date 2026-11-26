@@ -41,6 +41,9 @@ PAGES = {
     "admin_audit": "/audit",
     "admin_services": "/admin/services",
     "admin_feedback": "/admin/feedback",
+    "admin_settings": "/admin/settings",
+    "admin_analytics": "/admin/analytics",
+    "admin_exchange": "/admin/data-exchange",
 }
 LINKS = {route: name + ".html" for name, route in PAGES.items()}
 
