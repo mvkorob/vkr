@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Пользователи | InfoSec Desk</title>
+  <link rel="icon" href="../../src/infosec_desk/static/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../src/infosec_desk/static/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">К основному содержанию</a>
+<div class="layout">
+  <aside class="sidebar" aria-label="Навигация">
+    <a class="brand" href="public_overview.html" aria-label="InfoSec Desk, на главную">
+      <span class="brand-mark" aria-hidden="true">IS</span>
+      <span><strong>InfoSec Desk</strong><small>Служба защиты информации</small></span>
+    </a>
+    <div class="sidebar-label">Разделы</div>
+    <nav class="menu" aria-label="Главное меню">
+
+      <a href="dashboard.html" class="">
+        <svg class="menu-icon" aria-hidden="true" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.4"></rect><rect x="13" y="3" width="8" height="8" rx="1.4"></rect><rect x="3" y="13" width="8" height="8" rx="1.4"></rect><rect x="13" y="13" width="8" height="8" rx="1.4"></rect></svg>
+        Обзор
+      </a>
+      <a href="tickets.html" class="">
+        <svg class="menu-icon" aria-hidden="true" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 5h14M7 12h14M7 19h14"></path><path d="M3 5h.01M3 12h.01M3 19h.01"></path></svg>
+        Заявки
+      </a>
+      <a href="assets.html" class="">
+        <svg class="menu-icon" aria-hidden="true" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><path d="M8 8h8M8 12h8M8 16h4"></path></svg>
+        Средства защиты
+      </a>
+      <a href="ticket_new.html">Новая заявка</a>
+      <a href="profile.html">Личный кабинет</a>
+      <a href="my_activity.html">Моя активность</a>
+      <a href="notifications.html">Уведомления</a>
+      <a href="my_help.html">Помощь</a>
+
+      <a href="admin_users.html" class="active" aria-current="page">
+        <svg class="menu-icon" aria-hidden="true" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"></circle><path d="M3 20v-2a6 6 0 0 1 12 0v2M17 8h4M19 6v4"></path></svg>
+        Пользователи
+      </a>
+      <a href="admin_audit.html" class="">
+        <svg class="menu-icon" aria-hidden="true" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h14M7 10h14M7 16h10M3 4h.01M3 10h.01M3 16h.01"></path></svg>
+        Журнал действий
+      </a>
+      <a href="#" aria-disabled="true">Каталог услуг</a>
+      <a href="#" aria-disabled="true">Обратная связь</a>
+      <a href="#" aria-disabled="true">Настройки</a>
+      <a href="#" aria-disabled="true">Аналитика</a>
+      <a href="#" aria-disabled="true">Обмен JSON</a>
+
+
+      <a href="public_overview.html">О службе</a>
+      <a href="public_services.html">Услуги</a>
+      <a href="public_submit.html">Как подать заявку</a>
+      <a href="public_categories.html">Категории</a>
+      <a href="public_priorities.html">Приоритеты</a>
+      <a href="public_status.html">Статусы</a>
+      <a href="public_tracking.html">Отслеживание</a>
+      <a href="public_faq.html">Вопросы</a>
+      <a href="public_security.html">Безопасность</a>
+      <a href="public_help.html">Помощь без входа</a>
+      <a href="public_contacts.html">Контакты</a>
+      <a href="public_rules.html">Правила</a>
+      <a href="feedback.html">Обратная связь</a>
+
+    </nav>
+
+    <div class="account-panel">
+      <div class="account-row">
+        <span class="avatar" aria-hidden="true">А</span>
+        <div class="profile"><strong title="Администратор системы">Администратор системы</strong><small>Администратор</small></div>
+      </div>
+      <form method="get" action="#" onsubmit="return false">
+        <input type="hidden" name="csrf_token" value="">
+        <button class="logout" type="submit">Выйти</button>
+      </form>
+    </div>
+
+  </aside>
+  <main class="content" id="main-content">
+    <header class="topbar">
+      <nav class="topbar-path" aria-label="Хлебные крошки">
+        <a href="public_overview.html">InfoSec Desk</a><span class="topbar-divider">/</span>
+
+        <strong aria-current="page">Пользователи</strong>
+      </nav>
+      <div class="topbar-account">
+        <span class="topbar-user">admin</span>
+
+      </div>
+    </header>
+    <div class="page">
+
+
+
+<div class="page-head"><div><p class="section-label">Администрирование</p><h1>Пользователи</h1><p class="page-description">Учетные записи и роли сотрудников.</p></div></div>
+<section class="panel" aria-label="Список пользователей">
+  <div class="table-wrap users-table">
+    <table class="data-table">
+      <thead>
+        <tr><th scope="col">Логин</th><th scope="col">ФИО</th><th scope="col">Роль</th><th scope="col">Состояние</th><th scope="col">Действия</th></tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="table-strong">admin</td>
+          <td>Администратор системы</td>
+          <td>Администратор</td>
+          <td>Активен</td>
+          <td class="user-actions">
+            <div class="table-actions">
+              <button type="button" class="secondary button-sm" aria-expanded="false" aria-controls="user-editor-1" data-user-editor-target="user-editor-1">Изменить</button>
+
+            </div>
+          </td>
+        </tr>
+        <tr class="user-editor-row" id="user-editor-1" hidden>
+          <td colspan="5">
+            <form method="get" action="#" class="user-editor-form stack" onsubmit="return false">
+              <input type="hidden" name="csrf_token" value="">
+              <div class="form-grid">
+                <label>Логин<input name="username" value="admin" required maxlength="40"></label>
+                <label>ФИО<input name="full_name" value="Администратор системы" required maxlength="120"></label>
+                <label>Роль<select name="role"><option value="requester">Заявитель</option><option value="operator">Специалист</option><option value="admin" selected>Администратор</option></select></label>
+                <label>Состояние<select name="active"><option value="1" selected>Активен</option><option value="0">Отключен</option></select></label>
+              </div>
+              <div class="form-actions"><button class="primary" type="submit">Сохранить изменения</button></div>
+            </form>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-strong">employee</td>
+          <td>Сотрудник организации</td>
+          <td>Заявитель</td>
+          <td>Активен</td>
+          <td class="user-actions">
+            <div class="table-actions">
+              <button type="button" class="secondary button-sm" aria-expanded="false" aria-controls="user-editor-3" data-user-editor-target="user-editor-3">Изменить</button>
+
+              <form method="get" action="#" onsubmit="return false">
+                <input type="hidden" name="csrf_token" value="">
+                <button class="secondary danger button-sm" type="submit">Отключить</button>
+              </form>
+
+            </div>
+          </td>
+        </tr>
+        <tr class="user-editor-row" id="user-editor-3" hidden>
+          <td colspan="5">
+            <form method="get" action="#" class="user-editor-form stack" onsubmit="return false">
+              <input type="hidden" name="csrf_token" value="">
+              <div class="form-grid">
+                <label>Логин<input name="username" value="employee" required maxlength="40"></label>
+                <label>ФИО<input name="full_name" value="Сотрудник организации" required maxlength="120"></label>
+                <label>Роль<select name="role"><option value="requester" selected>Заявитель</option><option value="operator">Специалист</option><option value="admin">Администратор</option></select></label>
+                <label>Состояние<select name="active"><option value="1" selected>Активен</option><option value="0">Отключен</option></select></label>
+              </div>
+              <div class="form-actions"><button class="primary" type="submit">Сохранить изменения</button></div>
+            </form>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table-strong">operator</td>
+          <td>Специалист отдела защиты</td>
+          <td>Специалист</td>
+          <td>Активен</td>
+          <td class="user-actions">
+            <div class="table-actions">
+              <button type="button" class="secondary button-sm" aria-expanded="false" aria-controls="user-editor-2" data-user-editor-target="user-editor-2">Изменить</button>
+
+              <form method="get" action="#" onsubmit="return false">
+                <input type="hidden" name="csrf_token" value="">
+                <button class="secondary danger button-sm" type="submit">Отключить</button>
+              </form>
+
+            </div>
+          </td>
+        </tr>
+        <tr class="user-editor-row" id="user-editor-2" hidden>
+          <td colspan="5">
+            <form method="get" action="#" class="user-editor-form stack" onsubmit="return false">
+              <input type="hidden" name="csrf_token" value="">
+              <div class="form-grid">
+                <label>Логин<input name="username" value="operator" required maxlength="40"></label>
+                <label>ФИО<input name="full_name" value="Специалист отдела защиты" required maxlength="120"></label>
+                <label>Роль<select name="role"><option value="requester">Заявитель</option><option value="operator" selected>Специалист</option><option value="admin">Администратор</option></select></label>
+                <label>Состояние<select name="active"><option value="1" selected>Активен</option><option value="0">Отключен</option></select></label>
+              </div>
+              <div class="form-actions"><button class="primary" type="submit">Сохранить изменения</button></div>
+            </form>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</section>
+<section class="panel narrow" aria-labelledby="new-user-title">
+  <div class="field-panel"><h2 id="new-user-title">Добавить пользователя</h2>
+    <form action="#" method="get" class="stack" onsubmit="return false">
+      <input type="hidden" name="csrf_token" value="">
+      <div class="form-grid">
+        <label for="user-login">Логин<input id="user-login" name="username" required minlength="3" maxlength="40" autocomplete="off" placeholder="Например, ivanov"></label>
+        <label for="user-fullname">ФИО<input id="user-fullname" name="full_name" required maxlength="120" placeholder="Фамилия Имя Отчество"></label>
+        <label for="user-role">Роль<select id="user-role" name="role"><option value="requester">Заявитель</option><option value="operator">Специалист</option><option value="admin">Администратор</option></select></label>
+        <label for="user-pass">Начальный пароль<input id="user-pass" type="password" name="password" minlength="10" required autocomplete="new-password"><span class="hint">Не менее 10 символов</span></label>
+      </div>
+      <div class="form-actions"><button class="primary" type="submit">Создать пользователя</button></div>
+    </form>
+  </div>
+</section>
+
+<script>
+document.addEventListener('click', function (event) {
+  const button = event.target.closest('[data-user-editor-target]');
+  if (!button) return;
+  const row = document.getElementById(button.dataset.userEditorTarget);
+  if (!row) return;
+  const shouldOpen = row.hidden;
+  document.querySelectorAll('[data-user-editor-target][aria-expanded="true"]').forEach(function (openButton) {
+    const openRow = document.getElementById(openButton.dataset.userEditorTarget);
+    if (openRow) openRow.hidden = true;
+    openButton.setAttribute('aria-expanded', 'false');
+  });
+  row.hidden = !shouldOpen;
+  button.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+  if (shouldOpen) {
+    const firstField = row.querySelector('input[name="username"]');
+    if (firstField) firstField.focus();
+  }
+});
+</script>
+
+      <footer class="site-footer">
+        <span>Разработчик: Коробейникова Мария Вячеславовна</span>
+        <a href="public_contacts.html">Контакты службы</a>
+      </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
