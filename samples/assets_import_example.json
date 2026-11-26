@@ -1,0 +1,12 @@
+{
+  "format": "infosec-assets-v1",
+  "items": [
+    {
+      "inventory_no": "LAB-EXCHANGE-01",
+      "name": "Учебный межсетевой экран",
+      "location": "Лаборатория",
+      "protection_class": "Сетевая защита",
+      "description": "Пример файлового обмена"
+    }
+  ]
+}
