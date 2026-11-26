@@ -1,6 +1,6 @@
 # Версия InfoSec Desk 2.0.0
 
-Дата записи: 2026-11-25.
+Состав актуализирован: 2026-11-26.
 Репозиторий: [mvkorob/vkr](https://github.com/mvkorob/vkr), ветка `main`.
 Версия зафиксирована в `pyproject.toml` и `src/infosec_desk/__init__.py`.
 
@@ -12,6 +12,11 @@
 - JSON-обмен справочника, уведомления, каталог услуг и настройки службы.
 - WSGI-точка входа, зависимости Gunicorn, Blueprint Render и Dockerfile.
 - Инструкция запуска для Windows и Ubuntu, QR-код опубликованного сайта.
+
+Итоговые материалы: [комплект для сдачи](acceptance/final_handout.md),
+[финальные проверки](acceptance/release_readiness.md).
+В комплект добавлены отчёт и ТЗ, 30 макетов, 58 исходных браузерных снимков
+и 16 снимков текущих шаблонов.
 
 ## Контрольный список
 
@@ -44,6 +49,6 @@ python run.py serve --db instance/demo.sqlite3
 
 ## Материалы проверки интерфейса
 
-В хранилище снимков опубликованного сайта сохранены 48 изображений Chrome/Firefox
+В [каталоге снимков](acceptance/browser_screenshots/README.md) сохранены 48 изображений Chrome/Firefox
 с эмуляцией размеров экрана на Linux и 10 пользовательских изображений реальных
 iPad, iPhone и Windows. Состав материалов приведён в [test_plan.md](test_plan.md).

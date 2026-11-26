@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-26",
+  "application_version": "2.0.0",
+  "tested_source_commit": "f194e0571bac135c3c02ad3d14f5e1ce94a9ab2c",
+  "pytest": {
+    "passed": 67,
+    "failed": 0
+  },
+  "ruff": "passed",
+  "offline_checks": 10,
+  "mockups": 30,
+  "browser_render_checks": 60,
+  "screenshot_sha256_checks": 74,
+  "local_links_checked": 392,
+  "docx_zip_checks": 2,
+  "demo_database_unchanged": true
+}
